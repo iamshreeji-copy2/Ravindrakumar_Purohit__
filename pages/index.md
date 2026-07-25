@@ -8,7 +8,7 @@ art: plum
   IEEE & ACL Student Member
 </div>
 
-Welcome! 👋✨ I am a passionate **Ph.D. Research Scholar** in Speech & Audio Signal Processing at **Dhirubhai Ambani University (DAU, formerly DA-IICT)**, Gandhinagar, Gujarat, India 🇮🇳, working under the mentorship of <a href="https://sites.google.com/site/hemantpatildaiict/" target="_blank"><strong>Prof. (Dr.) Hemant A. Patil</strong></a>.
+Welcome! 👋✨ **Ravindrakumar Purohit** is a **Ph.D. candidate** in Speech & Audio Signal Processing at **Dhirubhai Ambani University (DAU, formerly DA-IICT)**, Gandhinagar, Gujarat, India 🇮🇳, working under the mentorship of <a href="https://sites.google.com/site/hemantpatildaiict/" target="_blank"><strong>Prof. (Dr.) Hemant A. Patil</strong></a>.
 
 My research and passion lie in the realm of **Speech & Audio Signal Processing** 🎧—specifically developing state-of-the-art **Deep Learning Speech Synthesis (Text-to-Speech / Vocoders)** 🗣️, **Voice Conversion** 🔄, **Speaker Diarization** 👥, and **Audio Deepfake Detection** 🛡️ to break language barriers for low-resource and Indic languages! 🚀🌐
 

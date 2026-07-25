@@ -144,15 +144,7 @@ onMounted(() => {
                 </span>
               </div>
 
-              <a
-                v-if="p.pdf || p.conferenceUrl"
-                :href="p.pdf || p.conferenceUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="underline opacity-70 hover:opacity-100"
-              >
-                [PDF / Link]
-              </a>
+
             </div>
           </div>
         </div>

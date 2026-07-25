@@ -66,6 +66,22 @@ watch(
   }
 )
 
+function openContainingAccordions(matchEl: HTMLElement) {
+  let parent = matchEl.parentElement
+  while (parent && parent.tagName !== 'MAIN') {
+    if (parent.classList.contains('grid') && parent.classList.contains('grid-rows-[0fr]')) {
+      const parentContainer = parent.parentElement
+      if (parentContainer) {
+        const button = parentContainer.querySelector('button')
+        if (button) {
+          button.click()
+        }
+      }
+    }
+    parent = parent.parentElement
+  }
+}
+
 // Watch highlight query changes to apply saffron highlights on search navigation
 watch(
   () => route.query.highlight,
@@ -76,8 +92,17 @@ watch(
       removeHighlights()
       if (queryVal) {
         highlightOnPage(String(queryVal))
+        
+        // Find the first match, open parent accordions if closed, and scroll to center of screen
+        const firstMatch = document.querySelector('.highlighted-saffron') as HTMLElement | null
+        if (firstMatch) {
+          openContainingAccordions(firstMatch)
+          setTimeout(() => {
+            firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }, 150)
+        }
       }
-    }, 150)
+    }, 200)
   },
   { immediate: true }
 )

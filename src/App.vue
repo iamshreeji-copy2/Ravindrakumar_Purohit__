@@ -184,6 +184,7 @@ onKeyStroke('Escape', (e) => {
 </script>
 
 <template>
+  <CustomCursor />
   <NavBar />
   <main class="px-7 py-10 of-x-hidden">
     <RouterView />

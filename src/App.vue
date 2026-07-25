@@ -17,10 +17,12 @@ function highlightOnPage(text: string) {
       if (!parent) return
       
       const parentName = parent.nodeName
+      const isElement = parent.nodeType === 1 // ELEMENT_NODE
+      
       if (
         ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'NOSCRIPT'].includes(parentName) ||
-        (parent as HTMLElement).classList?.contains('highlighted-saffron') ||
-        (parent as HTMLElement).closest('.highlighted-saffron-wrapper')
+        (isElement && parent.classList?.contains('highlighted-saffron')) ||
+        (isElement && typeof parent.closest === 'function' && parent.closest('.highlighted-saffron-wrapper'))
       ) {
         return
       }
@@ -58,14 +60,6 @@ function removeHighlights() {
   })
 }
 
-// Watch path changes to clean up old highlights
-watch(
-  () => route.path,
-  () => {
-    removeHighlights()
-  }
-)
-
 function openContainingAccordions(matchEl: HTMLElement) {
   let parent = matchEl.parentElement
   while (parent && parent.tagName !== 'MAIN') {
@@ -82,27 +76,37 @@ function openContainingAccordions(matchEl: HTMLElement) {
   }
 }
 
-// Watch highlight query changes to apply saffron highlights on search navigation
+// Apply highlights with retries to catch asynchronous rendering/mount delays
+function triggerHighlightWithRetries(query: string, attempts = 3) {
+  let count = 0
+  const run = () => {
+    removeHighlights()
+    highlightOnPage(query)
+    
+    const firstMatch = document.querySelector('.highlighted-saffron') as HTMLElement | null
+    if (firstMatch) {
+      openContainingAccordions(firstMatch)
+      setTimeout(() => {
+        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 100)
+    } else if (count < attempts) {
+      count++
+      setTimeout(run, 150)
+    }
+  }
+  run()
+}
+
+// Watch route path and query changes together to clean and apply saffron highlights dynamically
 watch(
-  () => route.query.highlight,
-  (queryVal) => {
+  () => [route.path, route.query.highlight],
+  ([path, queryVal]) => {
     if (typeof window === 'undefined') return
-    // Delay slightly to ensure page components are fully mounted/rendered in DOM
-    setTimeout(() => {
-      removeHighlights()
-      if (queryVal) {
-        highlightOnPage(String(queryVal))
-        
-        // Find the first match, open parent accordions if closed, and scroll to center of screen
-        const firstMatch = document.querySelector('.highlighted-saffron') as HTMLElement | null
-        if (firstMatch) {
-          openContainingAccordions(firstMatch)
-          setTimeout(() => {
-            firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          }, 150)
-        }
-      }
-    }, 200)
+    
+    removeHighlights()
+    if (queryVal) {
+      triggerHighlightWithRetries(String(queryVal))
+    }
   },
   { immediate: true }
 )

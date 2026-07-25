@@ -40,7 +40,7 @@ jobs:
       - name: Build site
         run: pnpm run build
         env:
-          BASE_URL: '/Ravindrakumar_Purohit__/'
+          BASE_URL: '/'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

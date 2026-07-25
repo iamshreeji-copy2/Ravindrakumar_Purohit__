@@ -10,6 +10,25 @@ art: plum
 
 ---
 
+### 🎓 Education
+
+<AccordionItem title="Ph.D. in Computer Science / Speech Signal Processing" date="Aug 2023 – Present">
+  Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, Gujarat.<br>
+  <em>Ph.D. Coursework:</em> Machine Learning (IE406), Speech Communication (CT437), Advance Digital Signal Processing (CT421), GANs for Speech Applications (PC831), Signal and System (CT1204), Research Methodology (PC874).
+</AccordionItem>
+
+<AccordionItem title="M.Tech in CSE (Data Science) — Nirma University" date="Aug 2021 – Apr 2023">
+  Institute of Technology, Nirma University, Ahmedabad, Gujarat.<br>
+  <strong>CGPA: 7.57 / 10</strong>
+</AccordionItem>
+
+<AccordionItem title="B.E. in Computer Engineering — GTU" date="Aug 2016 – Aug 2020">
+  Gujarat Technological University (GTU), Rajkot, Gujarat.<br>
+  <strong>CGPA: 6.83 / 10</strong>
+</AccordionItem>
+
+---
+
 ### 💼 Experience & Positions
 
 <AccordionItem title="Teaching Assistant — Dhirubhai Ambani University (DAU)" date="Aug 2023 – Present">
@@ -56,25 +75,6 @@ art: plum
 
 <AccordionItem title="NaadSindhu IndoML 2025 Travel Grant & Accommodation" date="Dec 2025">
   Attended NaadSindhu at the Graduate Forum, IndoML 2025, with full travel and accommodation grant support (December 19–21, 2025).
-</AccordionItem>
-
----
-
-### 🎓 Education
-
-<AccordionItem title="Ph.D. in Computer Science / Speech Signal Processing" date="Aug 2023 – Present">
-  Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, Gujarat.<br>
-  <em>Ph.D. Coursework:</em> Machine Learning (IE406), Speech Communication (CT437), Advance Digital Signal Processing (CT421), GANs for Speech Applications (PC831), Signal and System (CT1204), Research Methodology (PC874).
-</AccordionItem>
-
-<AccordionItem title="M.Tech in CSE (Data Science) — Nirma University" date="Aug 2021 – Apr 2023">
-  Institute of Technology, Nirma University, Ahmedabad, Gujarat.<br>
-  <strong>CGPA: 7.57 / 10</strong>
-</AccordionItem>
-
-<AccordionItem title="B.E. in Computer Engineering — GTU" date="Aug 2016 – Aug 2020">
-  Gujarat Technological University (GTU), Rajkot, Gujarat.<br>
-  <strong>CGPA: 6.83 / 10</strong>
 </AccordionItem>
 
 ---

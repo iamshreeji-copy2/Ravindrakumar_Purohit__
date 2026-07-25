@@ -19,14 +19,14 @@ function closeModal() {
       class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
       @click="openModal('short')"
     >
-      <span i-ri-article-line /> Short Bio
+      <span i-ri-article-line /> Short (&lt;100 words)
     </button>
     <button
       type="button"
       class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
       @click="openModal('long')"
     >
-      <span i-ri-file-text-line /> Full / Long Bio
+      <span i-ri-file-text-line /> Full (&lt;250 words)
     </button>
 
     <!-- Modal Subtab Teleport -->

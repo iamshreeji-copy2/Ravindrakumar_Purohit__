@@ -64,7 +64,6 @@ art: plum
 
 <AccordionItem title="Ph.D. in Computer Science / Speech Signal Processing" date="2023 – Present">
   Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, Gujarat.<br>
-  <strong>CPI: 8.47 / 10</strong> | Advisor: <a href="https://sites.google.com/site/hemantpatildaiict/" target="_blank">Prof. (Dr.) Hemant A. Patil</a><br>
   <em>Ph.D. Coursework:</em> Machine Learning (IE406), Speech Communication (CT437), Advance Digital Signal Processing (CT421), GANs for Speech Applications (PC831), Signal and System (CT1204), Research Methodology (PC874).
 </AccordionItem>
 
@@ -73,8 +72,8 @@ art: plum
   <strong>CGPA: 7.57 / 10</strong>
 </AccordionItem>
 
-<AccordionItem title="B.E. in Computer Engineering — AITS (GTU)" date="2016 – 2020">
-  Atmiya Institute of Technology & Science (Affiliated to GTU), Rajkot, Gujarat.<br>
+<AccordionItem title="B.E. in Computer Engineering — GTU" date="2016 – 2020">
+  Gujarat Technological University (GTU), Rajkot, Gujarat.<br>
   <strong>CGPA: 6.83 / 10</strong>
 </AccordionItem>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const isPlaying = ref(false)
 const audioRef = ref<HTMLAudioElement | null>(null)
@@ -7,7 +7,7 @@ const audioRef = ref<HTMLAudioElement | null>(null)
 // Resolve path dynamically to support both local dev and GitHub Pages base paths
 const audioSrc = `${import.meta.env.BASE_URL || '/'}bg.mp3`.replace(/\/+/g, '/')
 
-function fadeInVolume(audio: HTMLAudioElement, duration = 3000) {
+function fadeInVolume(audio: HTMLAudioElement, duration = 7000) {
   audio.volume = 0
   const start = performance.now()
   const targetVolume = 0.5 // comfortable target volume limit
@@ -24,7 +24,7 @@ function fadeInVolume(audio: HTMLAudioElement, duration = 3000) {
   requestAnimationFrame(animate)
 }
 
-function fadeOutVolume(audio: HTMLAudioElement, duration = 1500, callback: () => void) {
+function fadeOutVolume(audio: HTMLAudioElement, duration = 5000, callback: () => void) {
   const startVolume = audio.volume
   const start = performance.now()
 
@@ -46,7 +46,7 @@ function togglePlay() {
   if (!audioRef.value) return
 
   if (isPlaying.value) {
-    fadeOutVolume(audioRef.value, 1500, () => {
+    fadeOutVolume(audioRef.value, 5000, () => {
       isPlaying.value = false
     })
   } else {
@@ -54,13 +54,28 @@ function togglePlay() {
     audioRef.value.play()
       .then(() => {
         isPlaying.value = true
-        fadeInVolume(audioRef.value!, 3000)
+        fadeInVolume(audioRef.value!, 7000)
       })
       .catch((err) => {
         console.warn('Playback request failed or was blocked by browser autoplay policy:', err)
       })
   }
 }
+
+onMounted(() => {
+  if (audioRef.value) {
+    audioRef.value.volume = 0
+    // Attempt browser autoplay immediately on load
+    audioRef.value.play()
+      .then(() => {
+        isPlaying.value = true
+        fadeInVolume(audioRef.value!, 7000)
+      })
+      .catch((err) => {
+        console.info('Browser blocked autoplay initially. Flute music will start on user interaction or click.', err)
+      })
+  }
+})
 </script>
 
 <template>

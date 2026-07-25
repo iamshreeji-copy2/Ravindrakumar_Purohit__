@@ -57,7 +57,7 @@ function closeModal() {
                 <span>📋</span> Short Biography
               </h3>
               <p class="text-sm sm:text-base leading-relaxed opacity-90 text-gray-800 dark:text-gray-200 text-justify">
-                Ravindrakumar M. Purohit is a Ph.D. candidate at the Speech Research Lab, Dhirubhai Ambani University, specializing in AI-driven speech and audio signal processing under Prof. Hemant A. Patil. He holds B.Tech. and M.Tech. degrees. His research has appeared in <em>Cluster Computing</em> (Q1), the NeurIPS Workshop, IJCNN 2026, EUSIPCO 2025, ICPR 2024, APSIPA ASC 2024–2025, IALP 2025, and PREMI 2025. He received the Google Cloud Research Grant and IndoML Travel Grant. He reviews for <em>Applied Soft Computing</em> and leading international conferences and served as a session chair at IJCNN 2026.
+                Ravindrakumar M. Purohit is a Ph.D. candidate at the Speech Research Lab, Dhirubhai Ambani University, Gandhinagar, working under Prof. Hemant A. Patil. His research focuses on speech synthesis, voice conversion, speaker diarization, and audio deepfake detection. He has published in Q1 journals (<em>Cluster Computing</em>) and top conferences including NeurIPS Workshops, IJCNN, EUSIPCO, and ICPR. He is a Google Cloud Research Grant recipient and serves as a reviewer for leading speech and signal processing venues.
               </p>
             </div>
 
@@ -68,13 +68,13 @@ function closeModal() {
               </h3>
               <div class="space-y-4 text-sm sm:text-base leading-relaxed opacity-90 text-gray-800 dark:text-gray-200 text-justify">
                 <p>
-                  Ravindrakumar M. Purohit is a Ph.D. candidate at the Speech Research Lab, Dhirubhai Ambani University (formerly DA-IICT), Gandhinagar, India. Since August 2023, he has been pursuing his doctoral research under the supervision of Prof. Hemant A. Patil. He received his B.Tech. from Gujarat Technological University and his M.Tech. from Nirma University. His research interests include artificial intelligence, machine learning, deep learning, and speech and audio signal processing.
+                  Ravindrakumar M. Purohit is a Ph.D. Scholar at the Speech Research Lab, Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, India. Guided by Prof. Hemant A. Patil, his doctoral research focuses on speech synthesis, voice conversion, speaker diarization, and audio deepfake detection for low-resource Indic languages. He holds an M.Tech. in CSE (Data Science) from Nirma University.
                 </p>
                 <p>
-                  His research has appeared in <em>Cluster Computing</em>, a Q1 journal, and at prominent international venues, including the NeurIPS Workshop, IJCNN 2026, EUSIPCO 2025, ICPR 2024, APSIPA ASC 2024 and 2025, IALP 2025, and PREMI 2025. In 2025, he received a USD 1,000 Google Cloud Research Grant to develop, train, and deploy advanced speech-processing models on Google Cloud Platform. He also received the IndoML 2025 Travel Grant, with full support to present “NaadSindhu” at the Graduate Forum.
+                  His work has been published in the Q1-ranked <em>Cluster Computing</em> journal, as well as top venues including NeurIPS Workshops, IJCNN 2026, EUSIPCO 2025, ICPR 2024, APSIPA ASC, and PReMI. He is the recipient of a Google Cloud Research Grant and an IndoML Graduate Forum Travel Grant.
                 </p>
                 <p>
-                  He is an IEEE member affiliated with the Gujarat Section and a lifetime member of the International Association of Engineers. He has also qualified for the UGC-accredited Gujarat State Eligibility Test. His academic service includes reviewing for Elsevier’s <em>Applied Soft Computing</em>, ICASSP 2025, APSIPA ASC 2024 and 2025, and IJCNN 2026. He also served as a session chair at IJCNN 2026. Additionally, he contributed as the webmaster and a volunteer for S4P’25 at DAU, supporting website development, logistics, and documentation.
+                  Ravindrakumar is an active IEEE member and qualified the UGC-accredited Gujarat State Eligibility Test (GSET) for Assistant Professor. His academic service includes reviewing for Elsevier’s <em>Applied Soft Computing</em> journal, IEEE ICASSP, and IJCNN, as well as serving as a Session Chair at IJCNN 2026.
                 </p>
               </div>
             </div>

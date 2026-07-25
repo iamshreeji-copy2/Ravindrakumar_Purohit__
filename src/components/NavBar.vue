@@ -30,6 +30,7 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
+        <SearchModal />
         <RouterLink to="/" title="Home">
           <span class="lt-md:hidden">Home</span>
           <div i-ri-home-4-line class="md:hidden" />
@@ -50,8 +51,8 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line class="md:hidden" />
         </RouterLink>
-        <SearchModal />
         <TranslateWidget />
+        <MusicPlayer />
         <ToggleTheme />
       </div>
     </nav>

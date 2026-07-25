@@ -14,8 +14,10 @@ My research and passion lie in the realm of **Speech & Audio Signal Processing**
 
 Read bio summaries: <BioModal />
 
+Feel free to explore my latest research 📚 [Publications](/talks), check out my 💻 [Engineering Projects](/projects), or dive into my full 🎓 [Academic Journey & Background](/experience)! 🌟
+
 <div style="text-align: center !important;" class="my-8 py-6 border-y border-gray-200 dark:border-gray-800 text-center">
-  <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 leading-relaxed">
+  <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-neutral-800 dark:text-neutral-200 mb-3 leading-relaxed">
     सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
     ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।
   </p>
@@ -100,5 +102,3 @@ Read bio summaries: <BioModal />
 </div>
 
 ---
-
-Feel free to explore my latest research 📚 [Publications](/talks), check out my 💻 [Engineering Projects](/projects), or dive into my full 🎓 [Academic Journey & Background](/experience)! 🌟

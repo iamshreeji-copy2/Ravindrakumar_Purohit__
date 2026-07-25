@@ -16,14 +16,14 @@ function closeModal() {
   <span class="inline-flex items-center gap-2 my-2">
     <button
       type="button"
-      class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5"
+      class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
       @click="openModal('short')"
     >
       <span i-ri-article-line /> Short Bio
     </button>
     <button
       type="button"
-      class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5"
+      class="px-3 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1.5 focus:outline-none"
       @click="openModal('long')"
     >
       <span i-ri-file-text-line /> Full / Long Bio
@@ -37,13 +37,13 @@ function closeModal() {
           class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-xs"
           @click.self="closeModal"
         >
-          <div class="relative w-full max-w-2xl bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-6 sm:p-8 max-h-[85vh] overflow-y-auto modal-popup-box">
+          <div class="relative w-full max-w-2xl bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-6 sm:p-8 max-h-[85vh] overflow-y-auto modal-popup-box">
             <!-- Header Controls: Print & Close -->
             <div class="absolute top-4 right-4 flex items-center gap-2 print:hidden">
               <PrintButton />
               <button
                 type="button"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 text-lg font-bold w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 border-none! cursor-pointer transition-colors"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 text-lg font-bold w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 border-none! cursor-pointer transition-colors focus:outline-none"
                 aria-label="Close"
                 @click="closeModal"
               >

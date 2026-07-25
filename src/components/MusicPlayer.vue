@@ -68,6 +68,7 @@ function togglePlay() {
     <audio
       ref="audioRef"
       :src="audioSrc"
+      preload="auto"
       loop
     />
     <button

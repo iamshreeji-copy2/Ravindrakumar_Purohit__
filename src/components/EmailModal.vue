@@ -25,7 +25,7 @@ function sendEmail(type: 'student' | 'personal') {
   <span class="inline-block">
     <button
       type="button"
-      class="px-3 py-1 bg-gray-500/10 hover:bg-gray-500/20 text-current rounded-md text-sm border-none! inline-flex items-center gap-1.5 cursor-pointer transition-colors font-medium"
+      class="px-3 py-1 bg-gray-500/10 hover:bg-gray-500/20 text-current rounded-md text-sm border-none! inline-flex items-center gap-1.5 cursor-pointer transition-colors font-medium focus:outline-none"
       title="Contact via Email"
       @click="openModal"
     >
@@ -36,15 +36,15 @@ function sendEmail(type: 'student' | 'personal') {
       <Transition name="modal-fade">
         <div
           v-if="isOpen"
-          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-xs"
+          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/45 backdrop-blur-md"
           @click.self="closeModal"
         >
           <div
-            class="relative w-full max-w-md bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-6 modal-popup-box"
+            class="relative w-full max-w-md bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-6 modal-popup-box"
           >
             <button
               type="button"
-              class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 text-lg font-bold w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 border-none! cursor-pointer transition-colors"
+              class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 text-lg font-bold w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 border-none! cursor-pointer transition-colors focus:outline-none"
               aria-label="Close"
               @click="closeModal"
             >
@@ -61,7 +61,7 @@ function sendEmail(type: 'student' | 'personal') {
             <div class="space-y-3">
               <button
                 type="button"
-                class="w-full p-3.5 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 bg-gray-500/5 hover:bg-gray-500/10 text-left transition-all cursor-pointer flex items-center justify-between group text-current"
+                class="w-full p-3.5 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 bg-gray-500/5 hover:bg-gray-500/10 text-left transition-all cursor-pointer flex items-center justify-between group text-current focus:outline-none"
                 @click="sendEmail('student')"
               >
                 <div>
@@ -73,7 +73,7 @@ function sendEmail(type: 'student' | 'personal') {
 
               <button
                 type="button"
-                class="w-full p-3.5 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 bg-gray-500/5 hover:bg-gray-500/10 text-left transition-all cursor-pointer flex items-center justify-between group text-current"
+                class="w-full p-3.5 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 bg-gray-500/5 hover:bg-gray-500/10 text-left transition-all cursor-pointer flex items-center justify-between group text-current focus:outline-none"
                 @click="sendEmail('personal')"
               >
                 <div>

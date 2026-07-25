@@ -20,7 +20,7 @@ const { y: scroll } = useWindowScroll()
     </RouterLink>
     <button
       title="Scroll to top"
-      fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full
+      fixed right-3 bottom-16 w-10 h-10 hover:op100 rounded-full
       hover-bg-hex-8883 transition duration-300 z-100 print:hidden
       :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
       @click="toTop()"
@@ -30,7 +30,6 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <SearchModal />
         <RouterLink to="/" title="Home">
           <span class="lt-md:hidden">Home</span>
           <div i-ri-home-4-line class="md:hidden" />
@@ -56,6 +55,7 @@ const { y: scroll } = useWindowScroll()
         <ToggleTheme />
       </div>
     </nav>
+    <SearchModal />
   </header>
 </template>
 

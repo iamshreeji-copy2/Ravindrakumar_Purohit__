@@ -199,16 +199,15 @@ function navigateTo(path: string) {
 </script>
 
 <template>
-  <div class="inline-block print:hidden">
-    <!-- Search Toggle Button -->
+  <div class="print:hidden">
+    <!-- Floating Search Toggle Button -->
     <button
       type="button"
-      class="px-2 py-1 text-xs font-semibold rounded-md bg-gray-500/10 hover:bg-gray-500/20 text-current transition-colors border-none! cursor-pointer inline-flex items-center gap-1 opacity-75 hover:opacity-100 focus:outline-none"
+      class="fixed right-3 bottom-3 w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:bg-gray-500/20 text-current shadow-lg transition-all border-none! cursor-pointer z-100 focus:outline-none"
       title="Search site..."
       @click="openSearch"
     >
-      <span i-ri-search-line class="text-sm" />
-      <span class="lt-md:hidden">Search</span>
+      <span i-ri-search-line class="text-lg text-[#FF9933]" />
     </button>
 
     <Teleport to="body">

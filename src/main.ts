@@ -25,6 +25,7 @@ export const createApp = ViteSSG(
   App,
   {
     routes,
+    base: import.meta.env.BASE_URL,
   },
   ({ router, app, isClient }) => {
     dayjs.extend(LocalizedFormat)

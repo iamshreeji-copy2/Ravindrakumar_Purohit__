@@ -6,7 +6,6 @@ art: plum
 
 <div class="flex items-center justify-between mb-4 print:hidden">
   <span class="text-sm opacity-75">Detailed academic positions, honors, education, clinical visits, and professional service.</span>
-  <PrintButton />
 </div>
 
 ---

@@ -116,7 +116,7 @@ function triggerTranslation(langCode: string) {
           class="fixed inset-0 z-50 flex items-start justify-end p-4 pt-16 bg-black/45 backdrop-blur-md"
           @click.self="isOpen = false"
         >
-          <div class="relative w-72 bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-4 modal-popup-box">
+          <div class="relative w-84 bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-4 modal-popup-box">
             <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5 mb-3">
               <h4 class="text-xs font-bold uppercase tracking-wider text-gray-900 dark:text-gray-100 flex items-center gap-1.5">
                 <span i-carbon-translate /> Google Translate

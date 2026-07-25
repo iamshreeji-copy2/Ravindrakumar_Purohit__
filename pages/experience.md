@@ -22,15 +22,15 @@ art: plum
   </ul>
 </AccordionItem>
 
-<AccordionItem title="Junior Research Fellow — IIT Gandhinagar" date="June – Aug 2023">
+<AccordionItem title="Junior Research Fellow — IIT Gandhinagar" date="Jun – Aug 2023">
   Worked on the creation and implementation of benchmark evaluation tasks for low-level Natural Language Processing (NLP).
 </AccordionItem>
 
-<AccordionItem title="Assistant Professor — Ganpat University, Mahesana" date="May – June 2023">
+<AccordionItem title="Assistant Professor — Ganpat University, Mahesana" date="May – Jun 2023">
   Taught and mentored undergraduate students in computing and engineering, developing strong academic leadership and pedagogical skills.
 </AccordionItem>
 
-<AccordionItem title="AI-ML Intern — Vmukti Solutions Pvt Ltd, Ahmedabad" date="Sept 2022 – Mar 2023">
+<AccordionItem title="AI-ML Intern — Vmukti Solutions Pvt Ltd, Ahmedabad" date="Sep 2022 – Mar 2023">
   Conducted research and development on real-time Object & Human Detection using deep learning architectures including YOLOv5, SSD, and RCNN.
 </AccordionItem>
 
@@ -42,7 +42,7 @@ art: plum
 
 ### 🌟 Key Honors & Grants
 
-<AccordionItem title="DAU Student Research Excellence (SRE) Awardee" date="2024 & 2025">
+<AccordionItem title="DAU Student Research Excellence (SRE) Awardee" date="2024 – 2025">
   Honored with the Student Research Excellence Award at Dhirubhai Ambani University for two consecutive academic years (2023–24 & 2024–25) in recognition of top-tier publication output.
 </AccordionItem>
 
@@ -81,11 +81,7 @@ art: plum
 
 ### 🏥 Clinical & Professional Activities
 
-<AccordionItem title="Clinical Speech Data Collection — KDAH, Mumbai" date="Feb 2025">
-  Visited Kokilaben Dhirubhai Ambani Hospital (KDAH), Mumbai for Phase-III clinical speech data collection as part of the Speech Research Lab team, ensuring strict adherence to ICH Good Clinical Practice (GCP) E6 (R2) guidelines (Certified score: 89%).
-</AccordionItem>
-
-<AccordionItem title="Peer Reviewer for Q1 Journals & Top Conferences" date="Ongoing">
+<AccordionItem title="Peer Reviewer for Q1 Journals & Top Conferences" date="2024 – Present">
   Invited peer reviewer for:
   <ul>
     <li><em>Applied Soft Computing</em> (Elsevier Q1 Journal)</li>
@@ -94,6 +90,10 @@ art: plum
     <li><em>IJCNN 2026</em></li>
     <li><em>ICICST 2026</em></li>
   </ul>
+</AccordionItem>
+
+<AccordionItem title="Clinical Speech Data Collection — KDAH, Mumbai" date="Feb 2025">
+  Visited Kokilaben Dhirubhai Ambani Hospital (KDAH), Mumbai for Phase-III clinical speech data collection as part of the Speech Research Lab team, ensuring strict adherence to ICH Good Clinical Practice (GCP) E6 (R2) guidelines (Certified score: 89%).
 </AccordionItem>
 
 <AccordionItem title="Certifications & Memberships" date="2022 – 2025">

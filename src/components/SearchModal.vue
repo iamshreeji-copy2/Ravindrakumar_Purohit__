@@ -188,7 +188,13 @@ function handleClose() {
 
 function navigateTo(path: string) {
   handleClose()
-  router.push(path)
+  const query = searchQuery.value.trim()
+  const [urlPath, hash] = path.split('#')
+  router.push({
+    path: urlPath,
+    query: query ? { highlight: query } : undefined,
+    hash: hash ? `#${hash}` : undefined,
+  })
 }
 </script>
 

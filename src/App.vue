@@ -1,5 +1,86 @@
 <script setup lang="ts">
+import { watch } from 'vue'
+
 const route = useRoute()
+
+function highlightOnPage(text: string) {
+  if (typeof document === 'undefined') return
+  const mainEl = document.querySelector('main')
+  if (!mainEl) return
+
+  const escapedText = text.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  const regex = new RegExp(`(${escapedText})`, 'gi')
+
+  const walk = (node: any) => {
+    if (node.nodeType === 3) { // 3 is Node.TEXT_NODE
+      const parent = node.parentNode
+      if (!parent) return
+      
+      const parentName = parent.nodeName
+      if (
+        ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'NOSCRIPT'].includes(parentName) ||
+        (parent as HTMLElement).classList?.contains('highlighted-saffron') ||
+        (parent as HTMLElement).closest('.highlighted-saffron-wrapper')
+      ) {
+        return
+      }
+
+      const val = node.nodeValue || ''
+      if (regex.test(val)) {
+        const span = document.createElement('span')
+        span.className = 'highlighted-saffron-wrapper'
+        span.innerHTML = val.replace(
+          regex,
+          '<mark class="highlighted-saffron" style="background-color: #FF9933; color: #fff; border-radius: 3px; padding: 0.1em 0.25em; font-weight: 600;">$1</mark>'
+        )
+        parent.replaceChild(span, node)
+      }
+    } else {
+      const children = Array.from(node.childNodes)
+      for (const child of children) {
+        walk(child)
+      }
+    }
+  }
+
+  walk(mainEl)
+}
+
+function removeHighlights() {
+  if (typeof document === 'undefined') return
+  const wrappers = document.querySelectorAll('.highlighted-saffron-wrapper')
+  wrappers.forEach(wrapper => {
+    const parent = wrapper.parentNode
+    if (parent) {
+      const textNode = document.createTextNode(wrapper.textContent || '')
+      parent.replaceChild(textNode, wrapper)
+    }
+  })
+}
+
+// Watch path changes to clean up old highlights
+watch(
+  () => route.path,
+  () => {
+    removeHighlights()
+  }
+)
+
+// Watch highlight query changes to apply saffron highlights on search navigation
+watch(
+  () => route.query.highlight,
+  (queryVal) => {
+    if (typeof window === 'undefined') return
+    // Delay slightly to ensure page components are fully mounted/rendered in DOM
+    setTimeout(() => {
+      removeHighlights()
+      if (queryVal) {
+        highlightOnPage(String(queryVal))
+      }
+    }, 150)
+  },
+  { immediate: true }
+)
 
 const imageModel = ref<HTMLImageElement>()
 const imageAlt = ref<string>()

@@ -34,7 +34,7 @@ function closeModal() {
       <Transition name="modal-fade">
         <div
           v-if="activeModal"
-          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-xs"
+          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/45 backdrop-blur-md"
           @click.self="closeModal"
         >
           <div class="relative w-full max-w-2xl bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-6 sm:p-8 max-h-[85vh] overflow-y-auto modal-popup-box">

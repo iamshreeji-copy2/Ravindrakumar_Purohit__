@@ -50,6 +50,7 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line class="md:hidden" />
         </RouterLink>
+        <SearchModal />
         <TranslateWidget />
         <ToggleTheme />
       </div>

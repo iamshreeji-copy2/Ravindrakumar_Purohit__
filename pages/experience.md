@@ -46,7 +46,7 @@ art: plum
   Honored with the Student Research Excellence Award at Dhirubhai Ambani University for two consecutive academic years (2023–24 & 2024–25) in recognition of top-tier publication output.
 </AccordionItem>
 
-<AccordionItem title="Google Inc. $1,000 Research Grant" date="2025 – 2026">
+<AccordionItem title="Google Inc. $1,000 Research Grant" date="Sep 2025 – Sep 2026">
   Awarded a $1,000 research grant from Google Inc. to develop, train, and deploy advanced speech processing models on Google Cloud Platform (GCP).
 </AccordionItem>
 
@@ -62,17 +62,17 @@ art: plum
 
 ### 🎓 Education
 
-<AccordionItem title="Ph.D. in Computer Science / Speech Signal Processing" date="2023 – Present">
+<AccordionItem title="Ph.D. in Computer Science / Speech Signal Processing" date="Aug 2023 – Present">
   Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, Gujarat.<br>
   <em>Ph.D. Coursework:</em> Machine Learning (IE406), Speech Communication (CT437), Advance Digital Signal Processing (CT421), GANs for Speech Applications (PC831), Signal and System (CT1204), Research Methodology (PC874).
 </AccordionItem>
 
-<AccordionItem title="M.Tech in CSE (Data Science) — Nirma University" date="2021 – 2023">
+<AccordionItem title="M.Tech in CSE (Data Science) — Nirma University" date="Aug 2021 – Apr 2023">
   Institute of Technology, Nirma University, Ahmedabad, Gujarat.<br>
   <strong>CGPA: 7.57 / 10</strong>
 </AccordionItem>
 
-<AccordionItem title="B.E. in Computer Engineering — GTU" date="2016 – 2020">
+<AccordionItem title="B.E. in Computer Engineering — GTU" date="Aug 2016 – Aug 2020">
   Gujarat Technological University (GTU), Rajkot, Gujarat.<br>
   <strong>CGPA: 6.83 / 10</strong>
 </AccordionItem>

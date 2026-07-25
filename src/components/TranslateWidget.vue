@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 
 const isOpen = ref(false)
+const searchQuery = ref('')
 
 const languages = [
   { code: 'en', name: 'English (EN)', flag: '🇬🇧' },
@@ -24,6 +25,20 @@ const languages = [
   { code: 'ta', name: 'Tamil (TA)', flag: '🇮🇳' },
   { code: 'te', name: 'Telugu (TE)', flag: '🇮🇳' },
 ]
+
+const filteredLanguages = computed(() => {
+  const query = searchQuery.value.trim().toLowerCase()
+  if (!query) return languages
+  return languages.filter(lang => 
+    lang.name.toLowerCase().includes(query) || 
+    lang.code.toLowerCase().includes(query)
+  )
+})
+
+function handleClose() {
+  isOpen.value = false
+  searchQuery.value = ''
+}
 
 function initGoogleTranslate() {
   if ((window as any).googleTranslateElementInit) return
@@ -114,7 +129,7 @@ function triggerTranslation(langCode: string) {
         <div
           v-if="isOpen"
           class="fixed inset-0 z-50 flex items-start justify-end p-4 pt-16 bg-black/45 backdrop-blur-md"
-          @click.self="isOpen = false"
+          @click.self="handleClose"
         >
           <div class="relative w-84 bg-base rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 p-4 modal-popup-box">
             <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5 mb-3">
@@ -124,15 +139,26 @@ function triggerTranslation(langCode: string) {
               <button
                 type="button"
                 class="text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-sm font-bold border-none! bg-transparent cursor-pointer focus:outline-none"
-                @click="isOpen = false"
+                @click="handleClose"
               >
                 ✕
               </button>
             </div>
 
+            <!-- Search Field -->
+            <div class="mb-3 relative">
+              <input
+                v-model="searchQuery"
+                type="text"
+                placeholder="Search language..."
+                class="w-full px-3 py-1.5 text-xs rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-500/5 focus:bg-transparent focus:border-gray-400 dark:focus:border-gray-600 outline-none text-current transition-all"
+              />
+              <span class="absolute right-2.5 top-2 text-xs opacity-40 pointer-events-none" i-ri-search-line />
+            </div>
+
             <div class="space-y-1.5 max-h-72 overflow-y-auto pr-1">
               <button
-                v-for="lang in languages"
+                v-for="lang in filteredLanguages"
                 :key="lang.code"
                 type="button"
                 class="w-full px-3 py-2 rounded-lg text-left text-xs font-medium bg-gray-500/5 hover:bg-gray-500/15 transition-colors border-none! cursor-pointer flex items-center justify-between text-gray-800 dark:text-gray-200 focus:outline-none"
@@ -144,6 +170,9 @@ function triggerTranslation(langCode: string) {
                 </span>
                 <span class="text-xs opacity-50">Translate ↗</span>
               </button>
+              <div v-if="filteredLanguages.length === 0" class="text-center py-4 text-xs opacity-50">
+                No matching languages found
+              </div>
             </div>
           </div>
         </div>

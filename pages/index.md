@@ -8,7 +8,7 @@ art: plum
   IEEE & ACL Student Member
 </div>
 
-Welcome! 👋✨ **Ravindrakumar Purohit** is a **Ph.D. candidate** in Speech & Audio Signal Processing at **Dhirubhai Ambani University (DAU, formerly DA-IICT)**, Gandhinagar, Gujarat, India 🇮🇳, working under the mentorship of <a href="https://sites.google.com/site/hemantpatildaiict/" target="_blank"><strong>Prof. (Dr.) Hemant A. Patil</strong></a>.
+Welcome! 👋✨ I am <span class="text-[#f58025] dark:text-[#ff9933] font-bold">Ravindrakumar M. Purohit</span>, a **Ph.D. candidate** in Speech & Audio Signal Processing at **Dhirubhai Ambani University (DAU, formerly DA-IICT)**, Gandhinagar, Gujarat, India 🇮🇳, working under the mentorship of <a href="https://sites.google.com/site/hemantpatildaiict/" target="_blank"><strong>Prof. (Dr.) Hemant A. Patil</strong></a>.
 
 My research and passion lie in the realm of **Speech & Audio Signal Processing** 🎧—specifically developing state-of-the-art **Deep Learning Speech Synthesis (Text-to-Speech / Vocoders)** 🗣️, **Voice Conversion** 🔄, **Speaker Diarization** 👥, and **Audio Deepfake Detection** 🛡️ to break language barriers for low-resource and Indic languages! 🚀🌐
 
@@ -16,8 +16,8 @@ Read bio summaries: <BioModal />
 
 Feel free to explore my latest research 📚 [Publications](/talks), check out my 💻 [Engineering Projects](/projects), or dive into my full 🎓 [Academic Journey & Background](/experience)! 🌟
 
-<div style="text-align: center !important;" class="my-8 py-6 border-y border-gray-200 dark:border-gray-800 text-center">
-  <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-neutral-800 dark:text-neutral-200 mb-3 leading-relaxed">
+<div style="text-align: center !important;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
+  <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 leading-relaxed">
     सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
     ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।
   </p>
@@ -30,74 +30,88 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
   </footer>
 </div>
 
----
+### Updates
 
-### 🚀 Recent News & Key Updates
-
-<div class="space-y-4 my-6">
-  <div class="flex items-start gap-3">
+<div class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-6 my-6">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jun 2026</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented research paper and served as Session Chair at <strong>IJCNN 2026</strong>.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented paper & chaired session at <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">IJCNN</span>.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented three research papers (<em>Multi-Scale Speaker Diarization</em>, <em>LaghuVani</em>, and <em>Whisper Evaluation</em>) at <strong>PReMI 2025</strong>, Delhi.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Multi-Scale Speaker Diarization</span>, <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">LaghuVani</span>, & <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Whisper Evaluation</span> at PReMI.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Selected to present <em>“NaadSindhu”</em> at the Graduate Forum, <strong>IndoML 2025</strong>, with a full travel and accommodation grant.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">NaadSindhu</span> at IndoML with travel grant.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Invited reviewer for <strong>IEEE ICASSP 2026</strong> and Elsevier <em>Applied Soft Computing</em> Journal.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Reviewed for <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">IEEE ICASSP</span> & <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Applied Soft Computing</span> journal.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Oct 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Three research works accepted at <strong>PReMI 2025</strong>, IIT Delhi.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Three papers accepted at <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">PReMI</span>.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <em>“Swar: A Longformer-based GAN Vocoder for Gujarati”</em> at <strong>EUSIPCO 2025</strong> in Palermo, Italy.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Swar (Longformer GAN Vocoder)</span> at EUSIPCO.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Two research papers (<em>“BAANI”</em> and <em>“DAU-KDAH Corpus”</em>) accepted at <strong>APSIPA ASC 2025</strong>, Singapore.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Papers <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">BAANI</span> & <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">DAU-KDAH Corpus</span> accepted at APSIPA ASC.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Awarded a <strong>$1,000 Google Cloud Research Grant</strong> to support ongoing research activities.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Awarded $1,000 <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Google Cloud Research Grant</span>.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul 2025</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Winner of the <strong>5-Minute Presentation (5MPT)</strong> competition at S4P 2025, receiving a ₹5,000 cash prize.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Won <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">5-Minute Presentation (5MPT)</span> at S4P.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec 2024</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Honored with the <strong>Student Research Excellence Award (2024/25)</strong> by the Director of DAU for outstanding research contributions.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Received <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Student Research Excellence Award (2024/25)</span>.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov 2024</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Three papers (<em>“GGMDDC”</em>, <em>“PPHiFi-TTS”</em>, and <em>“GPGAN-VC”</em>) accepted at <strong>APSIPA ASC 2024</strong>, Macau, China.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Papers <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">GGMDDC</span>, <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">PPHiFi-TTS</span>, & <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">GPGAN-VC</span> accepted at APSIPA ASC.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov 2024</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Research paper <em>“FC-HiFiGAN”</em> accepted at the 27th International Conference on Pattern Recognition (<strong>ICPR 2024</strong>), Kolkata.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Paper <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">FC-HiFiGAN</span> accepted at ICPR.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul 2024</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Volunteered at the Summer School on Speech Signal Processing (<strong>S4P'24</strong>) organized by the Speech Research Lab, DA-IICT.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Volunteered at <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">S4P</span> Speech Summer School.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec 2023</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Qualified the <strong>Gujarat State Eligibility Test (GSET)</strong> for Assistant Professor, accredited by UGC, New Delhi.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Qualified <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">GSET</span> for Assistant Professor.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Aug 2023</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Joined the <strong>Speech Research Lab</strong> at Dhirubhai Ambani University as a Ph.D. Candidate.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Joined <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">Speech Research Lab</span> (DAU) as Ph.D. Candidate.</div>
   </div>
-  <div class="flex items-start gap-3">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">May 2023</span>
-    <div class="text-sm sm:text-base leading-relaxed opacity-90">Completed <strong>M.Tech in CSE (Data Science)</strong> from Nirma University, Ahmedabad.</div>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Completed <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">M.Tech (Data Science)</span> at Nirma University.</div>
   </div>
 </div>
 

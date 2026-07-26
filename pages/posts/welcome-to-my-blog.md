@@ -1,18 +1,51 @@
 ---
-title: Welcome to My Research Blog & Updates
-date: 2026-07-25T16:40:00.000Z
+title: Best Resources to Learn Speech Signal Processing in 2026
+date: 2026-07-26T12:00:00.000Z
 lang: en
-duration: 2 min
-subtitle: Upcoming research updates, voice synthesis posts, and video vlogs
+duration: 4 min
+subtitle: A modern guide to signal processing fundamentals, neural audio codecs, and large speech-language models (SLMs) for mastering speech processing in 2026.
 ---
 
-# Welcome to My Blog & Vlog Space
+Speech processing is a rapidly evolving interdisciplinary field combining acoustics, digital signal processing (DSP), and advanced deep learning. In 2026, the landscape is dominated by large speech-language models (SLMs), real-time speech-to-speech translation, and high-fidelity neural audio codecs.
 
-Hello! Welcome to my personal blog and update section.
+Here is a structured, step-by-step roadmap and list of the absolute best learning materials to master speech processing in 2026.
 
-Here, I will be sharing:
-- **Research Insights & Technical Writeups**: Deep dives into Speech Processing, Neural Vocoders (Swar, Vaachika, BAANI), Text-to-Speech (TTS) models, and Audio Deepfake Detection algorithms.
-- **Video Vlogs**: Interactive video logs discussing speech signal processing concepts, conference experiences, and machine learning tutorials.
-- **Project Announcements & Code Releases**: Open-source models, dataset releases, and challenge participation updates.
+---
 
-Stay tuned for upcoming posts and video content in the coming months!
+### 1. Acoustic & DSP Foundations (The Core)
+
+Even in the era of massive neural networks, you must understand the physics of speech production and digital signal processing to design robust speech systems.
+
+- **"Theory and Applications of Digital Speech Processing"** by Lawrence R. Rabiner and Ronald W. Schafer
+  - _Why read it:_ The definitive textbook for speech fundamentals. Essential for understanding short-time Fourier analysis, Mel-frequency Cepstral Coefficients (MFCCs), and source-filter theory (Linear Predictive Coding).
+- **"Discrete-Time Speech Signal Processing"** by Thomas F. Quatieri
+  - _Why read it:_ A rigorous mathematical guide for understanding sinusoidal modeling, speech enhancement, and classical speech analysis algorithms.
+
+---
+
+### 2. Modern Neural Audio Codecs & Representation Learning
+
+Modern speech processing in 2026 relies heavily on converting continuous audio waveforms into discrete tokens and learning robust representations from raw audio.
+
+- **Self-Supervised Learning (SSL):** Study papers on **Wav2Vec 2.0**, **HuBERT**, and **WavLM** to understand how speech features are learned without labeled data.
+- **Neural Audio Codecs:** Research **EnCodec** (Meta), **DAC (Descript Audio Codec)**, and **SoundStream**. These models use Vector Quantized Variational Autoencoders (VQ-VAE) to compress raw audio into discrete tokens, which are used as inputs for modern generative models.
+
+---
+
+### 3. Generative Voice & Speech-Language Models (SLMs)
+
+Generative voice models and native audio-speech language models are the state-of-the-art standards of 2026.
+
+- **Text-to-Speech (TTS):** Learn the evolution from **Tacotron 2** and **FastSpeech 2** to modern zero-shot, in-context voice clone models like **VALL-E** and **XTTS**.
+- **Neural Vocoders:** Study **HiFi-GAN** and **BigVGAN** to understand how discrete tokens or mel-spectrograms are reconstructed back into high-fidelity, natural raw waveforms.
+- **Speech-LLMs:** Study the integration of native audio tokens into Large Language Models (like GPT-4o-style native audio integration and Gemini's multimodal pipelines) to understand how models listen and speak directly.
+
+---
+
+### 4. Interactive Courses & Practical Coding Toolkits
+
+To build hands-on projects, you should work with these libraries and interactive tutorials:
+
+- **Hugging Face Audio Course:** An exceptional, modern, and free hands-on guide teaching you how to use PyTorch Transformers for automatic speech recognition (ASR), TTS, and audio classification.
+- **Librosa (Python Library):** The industry standard Python library for musical and audio analysis. Use it to load audio, extract spectrograms, compute pitches, and perform basic digital filters.
+- **ESPnet (Speech Processing Toolkit):** A state-of-the-art end-to-end speech processing toolkit built on PyTorch, widely used in research for building ASR, TTS, and translation models.

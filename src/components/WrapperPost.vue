@@ -12,10 +12,8 @@ const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
 
-const base = 'https://antfu.me'
-const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @antfu7\'s ${base}${route.path}\n\nI think...`)}`)
-const elkUrl = computed(() => `https://elk.zone/intent/post?text=${encodeURIComponent(`Reading @antfu@m.webtoo.ls\'s ${base}${route.path}\n\nI think...`)}`)
-const blueskyUrl = computed(() => `https://bsky.app/intent/compose?text=${encodeURIComponent(`Reading @antfu.me ${base}${route.path}\n\nI think...`)}`)
+const base = 'https://ravindrakumarpurohit.xyz'
+const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @iamshreeji\'s ${base}${route.path}\n\nI think...`)}`)
 
 onMounted(() => {
   const navigate = () => {
@@ -101,13 +99,10 @@ const ArtComponent = computed(() => {
   >
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
+      <span v-if="frontmatter.date" class="opacity-50 text-base font-normal ml-4 inline-block align-baseline">
+        {{ formatDate(frontmatter.date, false) }}<span v-if="frontmatter.duration"> · {{ frontmatter.duration }}</span>
+      </span>
     </h1>
-    <p
-      v-if="frontmatter.date"
-      class="opacity-50 !-mt-6 slide-enter-50"
-    >
-      {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
-    </p>
     <p v-if="frontmatter.place" class="mt--4!">
       <span op50>at </span>
       <a v-if="frontmatter.placeLink" :href="frontmatter.placeLink" target="_blank">
@@ -141,10 +136,6 @@ const ArtComponent = computed(() => {
     <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
-      <a :href="blueskyUrl" target="_blank" op50>bluesky</a>
-      <span op25> / </span>
-      <a :href="elkUrl" target="_blank" op50>mastodon</a>
-      <span op25> / </span>
       <a :href="tweetUrl" target="_blank" op50>twitter</a>
     </template>
     <br>

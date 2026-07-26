@@ -1,10 +1,33 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { talks } from '../../data/talks'
 import { formatDate } from '../logics'
 
 function getSlug(title: string) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-')
+}
+
+function formatMainTag(series?: string) {
+  if (!series)
+    return ''
+  const match = series.match(/^(\[[^\]]+\])/)
+  return match ? match[1] : ''
+}
+
+function formatRankTag(series?: string) {
+  if (!series)
+    return ''
+  const match = series.match(/\(([^)]+)\)/)
+  return match ? `(${match[1]})` : ''
+}
+
+function highlightName(description?: string) {
+  if (!description)
+    return ''
+  return description.replace(
+    /Ravindrakumar( M\.)? Purohit/g,
+    '<span class="text-[#f58025] dark:text-[#ff9933] font-semibold not-italic">Ravindrakumar M. Purohit</span>',
+  )
 }
 
 const activeYear = ref<string>('all')
@@ -13,17 +36,18 @@ const chronologicalYears = ['2026', '2025', '2024', '2023']
 // Group publications by year
 const publicationsByYear = computed(() => {
   const map: Record<string, typeof talks> = {
-    '2026': [],
-    '2025': [],
-    '2024': [],
-    '2023': [],
+    2026: [],
+    2025: [],
+    2024: [],
+    2023: [],
   }
 
   talks.forEach((talk) => {
     const yearStr = talk.presentations[0]?.date ? new Date(talk.presentations[0].date).getFullYear().toString() : '2025'
     if (map[yearStr]) {
       map[yearStr].push(talk)
-    } else {
+    }
+    else {
       map['2025'].push(talk)
     }
   })
@@ -38,7 +62,8 @@ function selectYear(year: string) {
       history.replaceState(null, '', window.location.pathname)
     }
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  } else {
+  }
+  else {
     window.location.hash = `year-${year}`
     const el = document.getElementById(`year-${year}`)
     if (el) {
@@ -115,36 +140,39 @@ onMounted(() => {
           <div
             v-for="(talk, idx) in publicationsByYear[y]"
             :key="idx"
-            class="py-2 transition-all duration-300"
+            class="py-3 transition-all duration-300 flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-gray-100 dark:border-gray-900 last:border-b-0"
           >
-            <div v-if="talk.series" class="text-xs opacity-50 font-mono mb-0.5">
-              {{ talk.series }}
+            <!-- Left Side: Series ID & Rank -->
+            <div v-if="talk.series" class="w-24 shrink-0 text-sm font-semibold opacity-80 font-mono select-none text-center self-center flex flex-col gap-1">
+              <span class="block">{{ formatMainTag(talk.series) }}</span>
+              <span v-if="formatRankTag(talk.series)" class="block text-[11px] opacity-75 font-normal leading-tight">
+                {{ formatRankTag(talk.series) }}
+              </span>
             </div>
 
-            <h3 :id="getSlug(talk.title)" class="text-base font-semibold leading-snug">
-              {{ talk.title }}
-              <a class="header-anchor" :href="`#${getSlug(talk.title)}`" aria-hidden="true">#</a>
-            </h3>
+            <!-- Right Side: Publication Details -->
+            <div class="flex-1">
+              <h3 :id="getSlug(talk.title)" class="text-base font-semibold leading-snug">
+                {{ talk.title }}
+                <a class="header-anchor" :href="`#${getSlug(talk.title)}`" aria-hidden="true">#</a>
+              </h3>
 
-            <div v-if="talk.description" class="text-sm opacity-70 mt-0.5 italic">
-              {{ talk.description }}
-            </div>
+              <div v-if="talk.description" class="text-sm opacity-70 mt-1 italic" v-html="highlightName(talk.description)" />
 
-            <div
-              v-for="(p, pIdx) in talk.presentations"
-              :key="pIdx"
-              class="mt-2 text-xs opacity-75 flex flex-wrap items-center justify-between gap-2"
-            >
-              <div>
-                <a :href="p.conferenceUrl" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-100">
-                  {{ p.conference }}
-                </a>
-                <span class="opacity-60 ml-2">
-                  {{ formatDate(p.date, false) }} · {{ p.location }}
-                </span>
+              <div
+                v-for="(p, pIdx) in talk.presentations"
+                :key="pIdx"
+                class="mt-1.5 text-xs opacity-75 flex flex-wrap items-center justify-between gap-2"
+              >
+                <div>
+                  <a :href="p.conferenceUrl" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-100 font-semibold">
+                    {{ p.conference }}
+                  </a>
+                  <span class="opacity-60 ml-2">
+                    {{ formatDate(p.date, false) }} · {{ p.location }}
+                  </span>
+                </div>
               </div>
-
-
             </div>
           </div>
         </div>

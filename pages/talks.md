@@ -1,13 +1,13 @@
 ---
-title: Publications - Ravindrakumar M. Purohit
+title: Publications
 display: ''
 art: plum
 ---
 
-<h1 important="mb-4 mt-8">Publications & Conference Papers</h1>
+<h1 important="mb-4 mt-8">Publications</h1>
 
 <p op75 class="mb-8">
-Peer-reviewed publications in international conferences, workshops, and journals in Speech Processing, Machine Learning, and Computer Science.
+Peer-reviewed publications in international conferences, workshops, and journals.
 </p>
 
 <ListTalks />

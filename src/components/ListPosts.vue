@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Post } from '~/types'
 import { useRouter } from 'vue-router/auto'
-import { englishOnly, formatDate } from '~/logics'
+import { englishOnly } from '~/logics'
+import dayjs from 'dayjs'
 
 const props = defineProps<{
   type?: string
@@ -32,99 +33,92 @@ const posts = computed(() =>
 )
 
 const getYear = (a: Date | string | number) => new Date(a).getFullYear()
-const isFuture = (a?: Date | string | number) => a && new Date(a) > new Date()
-const isSameYear = (a?: Date | string | number, b?: Date | string | number) => a && b && getYear(a) === getYear(b)
-function isSameGroup(a: Post, b?: Post) {
-  return (isFuture(a.date) === isFuture(b?.date)) && isSameYear(a.date, b?.date)
-}
+const formatMonth = (d: string | Date) => dayjs(d).format('MMM')
+
+const postsByYear = computed(() => {
+  const groups: Record<string, Post[]> = {}
+  for (const post of posts.value) {
+    const y = getYear(post.date)
+    if (!groups[y])
+      groups[y] = []
+    groups[y].push(post)
+  }
+  return groups
+})
+
+const years = computed(() => Object.keys(postsByYear.value).sort((a, b) => Number(b) - Number(a)))
 </script>
 
 <template>
-  <ul>
+  <div class="max-w-300 mx-auto">
     <template v-if="!posts.length">
       <div py2 op50>
         { nothing here yet }
       </div>
     </template>
 
-    <template v-for="route, idx in posts" :key="route.path">
-      <div
-        class="slide-enter"
-        :style="{
-          '--enter-stage': idx,
-          '--enter-step': '60ms',
-        }"
-      >
-        <component
-          :is="route.path.includes('://') ? 'a' : 'RouterLink'"
-          v-bind="
-            route.path.includes('://') ? {
-              href: route.path,
-              target: '_blank',
-              rel: 'noopener noreferrer',
-            } : {
-              to: route.path,
-            }
-          "
-          class="item block font-normal mb-6 mt-2 no-underline"
+    <section v-else class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-6 my-6">
+      <!-- Year Group -->
+      <div v-for="y in years" :key="y" class="relative space-y-6">
+        <!-- Year Marker (Left aligned, no dot) -->
+        <div class="absolute right-full mr-12 top-1 text-right select-none">
+          <span class="text-sm font-bold font-mono opacity-60">{{ y }}</span>
+        </div>
+
+        <!-- Post Items for this Year -->
+        <div
+          v-for="route, idx in postsByYear[y]"
+          :key="route.path"
+          class="relative flex items-start gap-3 group"
         >
-          <li class="no-underline flex flex-col md:flex-row gap-2 md:items-center">
-            <!-- 1. Date FIRST -->
-            <div flex="~ gap-2 items-center" class="shrink-0">
-              <span text-sm op50 ws-nowrap class="font-mono">
-                {{ formatDate(route.date, true) }}
-              </span>
-              <span v-if="route.platform" text-sm op40 ws-nowrap>· {{ route.platform }}</span>
-              <span v-if="route.place" text-sm op40 ws-nowrap md:hidden>· {{ route.place }}</span>
-              <span
-                v-if="route.inperson"
-                align-middle op50 flex-none
-                i-ri:group-2-line
-                title="In person"
-              />
-              <span
-                v-if="route.recording || route.video"
-                align-middle op50 flex-none
-                i-ri:film-line
-                title="Provided in video"
-              />
-              <span
-                v-if="route.radio"
-                align-middle op50 flex-none
-                i-ri:radio-line
-                title="Provided in radio"
-              />
-            </div>
+          <!-- Timeline dot centered on vertical bar -->
+          <div class="absolute -left-[29px] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
+          
+          <!-- Month indicator badge -->
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5 select-none">
+            {{ formatMonth(route.date) }}
+          </span>
 
-            <!-- 2. Blog Title SECOND & 3. Reading Duration AFTER Title -->
-            <div class="title text-lg leading-1.2em" flex="~ gap-2 wrap items-center">
-              <span
-                v-if="route.lang === 'zh'"
-                align-middle flex-none
-                class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml--12 mr2 my-auto hidden md:block"
-              >中文</span>
-              <span
-                v-if="route.lang === 'ja'"
-                align-middle flex-none
-                class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml--15 mr2 my-auto hidden md:block"
-              >日本語</span>
-              <span align-middle class="font-medium hover:underline">{{ route.title }}</span>
-              <span
-                v-if="route.redirect"
-                align-middle op50 flex-none text-xs ml--1.5
-                i-carbon-arrow-up-right
-                title="External"
-              />
+          <!-- Post Content Details -->
+          <div class="flex-1 text-sm sm:text-base leading-relaxed">
+            <component
+              :is="route.path.includes('://') ? 'a' : 'RouterLink'"
+              v-bind="
+                route.path.includes('://') ? {
+                  href: route.path,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                } : {
+                  to: route.path,
+                }
+              "
+              class="font-medium hover:underline !no-underline !text-current"
+            >
+              {{ route.title }}
+            </component>
 
-              <!-- Reading Duration AFTER Title -->
-              <span v-if="route.duration" text-sm op40 ws-nowrap>· {{ route.duration }}</span>
-            </div>
-          </li>
-          <div v-if="route.place" op50 text-sm hidden mt--2 md:block>
-            {{ route.place }}
+            <!-- Language Badge -->
+            <span
+              v-if="route.lang === 'zh'"
+              class="text-[10px] bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml-2 align-middle"
+            >中文</span>
+            <span
+              v-if="route.lang === 'ja'"
+              class="text-[10px] bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml-2 align-middle"
+            >日本語</span>
+
+            <!-- External Link Icon -->
+            <span
+              v-if="route.redirect"
+              class="align-middle op50 flex-none text-xs ml-1 i-carbon-arrow-up-right inline-block"
+              title="External"
+            />
+
+            <!-- Reading Duration -->
+            <span v-if="route.duration" class="opacity-50 text-xs ml-2 font-mono align-middle">· {{ route.duration }}</span>
           </div>
-        </component>
+        </div>
       </div>
-    </template>
-  </ul>
+    </section>
+  </div>
 </template>

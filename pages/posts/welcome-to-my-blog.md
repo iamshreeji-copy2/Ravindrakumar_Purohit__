@@ -1,6 +1,6 @@
 ---
 title: Best Resources to Learn Speech Signal Processing in 2026
-date: 2026-07-26T12:00:00.000Z
+date: "2026-07-26"
 lang: en
 duration: 4 min
 subtitle: A modern guide to signal processing fundamentals, neural audio codecs, and large speech-language models (SLMs) for mastering speech processing in 2026.

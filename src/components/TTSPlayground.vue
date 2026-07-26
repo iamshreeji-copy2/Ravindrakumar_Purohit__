@@ -2,13 +2,32 @@
 import { ref, onMounted } from 'vue'
 
 const text = ref('Speech processing is a rapidly evolving interdisciplinary field combining acoustics, digital signal processing, and advanced deep learning.')
+const engine = ref<'native' | 'wasm'>('native')
 const status = ref<'idle' | 'loading' | 'synthesizing' | 'ready' | 'error'>('idle')
 const progress = ref(0)
 const loadingFile = ref('')
 const audioUrl = ref<string | null>(null)
 const errorMsg = ref('')
 
+// Native Speech Synthesis state
+const voices = ref<SpeechSynthesisVoice[]>([])
+const selectedVoiceName = ref('')
 let synthesizer: any = null
+
+onMounted(() => {
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    const loadVoices = () => {
+      voices.value = window.speechSynthesis.getVoices()
+      if (voices.value.length > 0 && !selectedVoiceName.value) {
+        // default to first english voice or browser default
+        const defaultVoice = voices.value.find(v => v.lang.startsWith('en')) || voices.value[0]
+        selectedVoiceName.value = defaultVoice.name
+      }
+    }
+    loadVoices()
+    window.speechSynthesis.onvoiceschanged = loadVoices
+  }
+})
 
 const presets = [
   "Hello! Welcome to my speech signal processing research portfolio.",
@@ -16,7 +35,7 @@ const presets = [
   "Let's explore neural vocoders, voice conversion, and audio deepfake detection!"
 ]
 
-// WAV Encoding Helper Functions (16-bit PCM Mono)
+// WAV Encoding Helper Functions for WASM VITS
 function writeString(view: DataView, offset: number, string: string) {
   for (let i = 0; i < string.length; i++) {
     view.setUint8(offset + i, string.charCodeAt(i))
@@ -42,9 +61,9 @@ function encodeWAV(samples: Float32Array, sampleRate: number) {
   view.setUint16(20, 1, true) // PCM Format
   view.setUint16(22, 1, true)  // Mono
   view.setUint32(24, sampleRate, true)
-  view.setUint32(28, sampleRate * 2, true) // Byte rate
-  view.setUint16(32, 2, true)  // Block align
-  view.setUint16(34, 16, true) // 16-bit
+  view.setUint32(28, sampleRate * 2, true)
+  view.setUint16(32, 2, true)
+  view.setUint16(34, 16, true)
   writeString(view, 36, 'data')
   view.setUint32(40, samples.length * 2, true)
 
@@ -61,7 +80,6 @@ async function initSynthesizer() {
   errorMsg.value = ''
 
   try {
-    // Dynamic import from CDN to bypass local node package issues
     const { pipeline, env } = await import(/* @vite-ignore */ 'https://esm.sh/@xenova/transformers@2.17.2')
     
     // Configure transformers.js to load models locally from the public folder
@@ -82,11 +100,40 @@ async function initSynthesizer() {
   } catch (err: any) {
     console.error('Failed to load VITS model:', err)
     status.value = 'error'
-    errorMsg.value = `Model loading failed: ${err.message || err}`
+    errorMsg.value = `Model loading failed (Ensure VITS model files exist in public/models/vits/): ${err.message || err}`
   }
 }
 
-async function synthesize() {
+async function speakNative() {
+  if (!text.value.trim() || typeof window === 'undefined' || !window.speechSynthesis) return
+
+  status.value = 'synthesizing'
+  
+  // Stop any active speech
+  window.speechSynthesis.cancel()
+
+  const utterance = new SpeechSynthesisUtterance(text.value.trim())
+  
+  // Apply selected voice
+  const activeVoice = voices.value.find(v => v.name === selectedVoiceName.value)
+  if (activeVoice) {
+    utterance.voice = activeVoice
+  }
+
+  utterance.onend = () => {
+    status.value = 'ready'
+  }
+
+  utterance.onerror = (err) => {
+    console.error('Native speech error:', err)
+    status.value = 'error'
+    errorMsg.value = `Web Speech synthesis failed: ${err.error}`
+  }
+
+  window.speechSynthesis.speak(utterance)
+}
+
+async function synthesizeWASM() {
   if (!text.value.trim()) return
 
   if (audioUrl.value) {
@@ -104,23 +151,34 @@ async function synthesize() {
     }
 
     status.value = 'synthesizing'
-    
-    // Perform model inference in WebAssembly
     const output = await synthesizer(text.value.trim())
-    
-    // VITS outputs: output.audio (Float32Array) and output.sampling_rate
     const wavBlob = encodeWAV(output.audio, output.sampling_rate)
     audioUrl.value = URL.createObjectURL(wavBlob)
     status.value = 'ready'
   } catch (err: any) {
-    console.error('TTS Synthesis failed:', err)
+    console.error('WASM TTS Synthesis failed:', err)
     status.value = 'error'
-    errorMsg.value = `Synthesis failed: ${err.message || err}`
+    errorMsg.value = `WASM Synthesis failed: ${err.message || err}`
+  }
+}
+
+function handleSpeak() {
+  if (engine.value === 'native') {
+    speakNative()
+  } else {
+    synthesizeWASM()
   }
 }
 
 function selectPreset(preset: string) {
   text.value = preset
+}
+
+function stopNative() {
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    window.speechSynthesis.cancel()
+    status.value = 'idle'
+  }
 }
 </script>
 
@@ -128,13 +186,48 @@ function selectPreset(preset: string) {
   <div class="border border-gray-200 dark:border-gray-800 rounded-xl p-5 md:p-6 bg-gray-500/5 backdrop-blur-md max-w-xl mx-auto my-8 slide-enter">
     <div class="flex items-center gap-2 mb-4">
       <div i-ri:voiceprint-line class="text-xl text-blue-500" />
-      <h3 class="text-lg font-bold">Client-Side VITS TTS Playground</h3>
-      <span class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-500 select-none">WebAssembly</span>
+      <h3 class="text-lg font-bold">Local Client Hardware TTS</h3>
+    </div>
+
+    <!-- Engine Selector Tab -->
+    <div class="grid grid-cols-2 gap-2 p-1 bg-gray-500/10 rounded-lg mb-4 text-xs font-semibold">
+      <button
+        @click="engine = 'native'; errorMsg = ''; status = 'idle'"
+        :class="engine === 'native' ? 'bg-white dark:bg-zinc-800 shadow-sm text-blue-500' : 'opacity-60 hover:opacity-100'"
+        class="py-2 px-3 rounded-md transition select-none text-center"
+      >
+        Native Browser Speech (Instant)
+      </button>
+      <button
+        @click="engine = 'wasm'; errorMsg = ''; status = 'idle'"
+        :class="engine === 'wasm' ? 'bg-white dark:bg-zinc-800 shadow-sm text-blue-500' : 'opacity-60 hover:opacity-100'"
+        class="py-2 px-3 rounded-md transition select-none text-center"
+      >
+        Neural WASM (VITS Offline)
+      </button>
     </div>
 
     <p class="text-xs opacity-60 mb-4 leading-relaxed">
-      Synthesize speech completely in your browser using the VITS model. The model files (approx. 80MB) will download and be cached locally on the first run.
+      <span v-if="engine === 'native'">
+        Synthesize speech instantly using the built-in operating system/browser voice engines. Runs 100% locally on your hardware with no downloads required.
+      </span>
+      <span v-else>
+        Synthesize speech locally using WebAssembly and ONNX Runtime. Requires VITS model files placed in your website's <code>public/models/vits/</code> directory.
+      </span>
     </p>
+
+    <!-- Native Engine Voices list -->
+    <div v-if="engine === 'native' && voices.length > 0" class="mb-4">
+      <label class="text-xs font-semibold opacity-50 block mb-1.5">Select Local Voice:</label>
+      <select
+        v-model="selectedVoiceName"
+        class="w-full text-xs p-2 rounded border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-black/40 focus:outline-none"
+      >
+        <option v-for="voice in voices" :key="voice.name" :value="voice.name">
+          {{ voice.name }} ({{ voice.lang }})
+        </option>
+      </select>
+    </div>
 
     <!-- Presets -->
     <div class="mb-4">
@@ -165,10 +258,10 @@ function selectPreset(preset: string) {
       </span>
     </div>
 
-    <!-- Loading Model Progress Bar -->
-    <div v-if="status === 'loading'" class="mb-5 space-y-2">
+    <!-- Loading Model Progress Bar (WASM only) -->
+    <div v-if="engine === 'wasm' && status === 'loading'" class="mb-5 space-y-2">
       <div class="flex justify-between text-xs font-mono select-none">
-        <span class="opacity-60">Downloading model ({{ loadingFile }})...</span>
+        <span class="opacity-60">Loading local model files ({{ loadingFile }})...</span>
         <span class="text-blue-500 font-bold">{{ progress }}%</span>
       </div>
       <div class="w-full h-1.5 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
@@ -179,18 +272,26 @@ function selectPreset(preset: string) {
     <!-- Action Button -->
     <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
       <button
-        @click="synthesize"
+        @click="handleSpeak"
         :disabled="status === 'loading' || status === 'synthesizing'"
         class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition shadow-md shadow-blue-500/10 disabled:opacity-50 disabled:cursor-not-allowed select-none"
       >
-        <span v-if="status === 'loading'">Downloading weights...</span>
-        <span v-else-if="status === 'synthesizing'">Synthesizing speech...</span>
-        <span v-else>Synthesize & Speak 🗣️</span>
+        <span v-if="status === 'loading'">Initializing WASM...</span>
+        <span v-else-if="status === 'synthesizing'">Generating speech...</span>
+        <span v-else>Speak Text 🗣️</span>
       </button>
 
-      <!-- Reset/Clear Button -->
+      <!-- Reset/Stop Button -->
       <button
-        v-if="audioUrl"
+        v-if="status === 'synthesizing' && engine === 'native'"
+        @click="stopNative"
+        class="px-4 py-2.5 rounded-lg border border-red-500/20 bg-red-500/5 hover:bg-red-500/10 text-red-500 text-sm font-semibold transition select-none"
+      >
+        Stop Speech
+      </button>
+
+      <button
+        v-if="audioUrl && engine === 'wasm'"
         @click="audioUrl = null; status = 'idle'"
         class="px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-500/10 text-sm font-semibold transition select-none"
       >
@@ -199,12 +300,12 @@ function selectPreset(preset: string) {
     </div>
 
     <!-- Error Message -->
-    <div v-if="status === 'error'" class="mt-4 p-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 text-xs">
+    <div v-if="status === 'error' || errorMsg" class="mt-4 p-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 text-xs">
       {{ errorMsg }}
     </div>
 
-    <!-- Audio Player output -->
-    <div v-if="audioUrl" class="mt-5 pt-5 border-t border-gray-200/50 dark:border-gray-800/50 flex flex-col gap-3 slide-enter">
+    <!-- Audio Player output (WASM only) -->
+    <div v-if="audioUrl && engine === 'wasm'" class="mt-5 pt-5 border-t border-gray-200/50 dark:border-gray-800/50 flex flex-col gap-3 slide-enter">
       <span class="text-xs font-semibold opacity-50 select-none">Synthesized Audio Output:</span>
       <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
         <audio :src="audioUrl" controls autoplay class="w-full max-h-12" />

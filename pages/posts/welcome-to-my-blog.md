@@ -7,6 +7,10 @@ subtitle: A modern guide to signal processing fundamentals, neural audio codecs,
 description: A curated roadmap to textbooks, video lectures, coding toolkits, and modern deep learning models for mastering speech processing in 2026.
 ---
 
+<p class="opacity-60 -mt-2 mb-6 text-sm">
+Written and curated by <a href="/">Ravindrakumar M. Purohit</a>
+</p>
+
 Speech processing is a rapidly evolving interdisciplinary field combining acoustics, digital signal processing (DSP), and advanced deep learning. In 2026, the landscape is dominated by large speech-language models (SLMs), real-time speech-to-speech translation, and high-fidelity neural audio codecs.
 
 Here is a structured, step-by-step roadmap and list of the absolute best learning materials to master speech processing in 2026.

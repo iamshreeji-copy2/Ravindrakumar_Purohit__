@@ -79,6 +79,7 @@
     "prompts": "catalog:dev",
     "rimraf": "catalog:dev",
     "sharp": "catalog:dev",
+    "sherpa-onnx-node": "catalog:",
     "simple-git": "catalog:dev",
     "simple-git-hooks": "catalog:dev",
     "tsx": "catalog:dev",

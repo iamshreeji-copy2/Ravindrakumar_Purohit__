@@ -10,7 +10,6 @@ trustPolicyExclude:
   - 'onnxruntime-web'
   - 'onnxruntime-common'
 
-
 packages: []
 
 catalogs:
@@ -109,3 +108,6 @@ allowBuilds:
   exifreader: true
   sharp: true
   simple-git-hooks: true
+
+catalog:
+  sherpa-onnx-node: ^1.13.4

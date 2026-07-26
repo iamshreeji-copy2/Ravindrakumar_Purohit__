@@ -213,6 +213,7 @@ onKeyStroke('Escape', (e) => {
     <RouterView />
     <Footer :key="route.path" />
   </main>
+  <TtsAccessibility />
   <Transition name="fade">
     <div v-if="imageModel" fixed top-0 left-0 right-0 bottom-0 z-500 backdrop-blur-7 @click="imageModel = undefined">
       <div absolute top-0 left-0 right-0 bottom-0 bg-black:50 z--1 />

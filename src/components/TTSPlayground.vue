@@ -64,11 +64,12 @@ async function initSynthesizer() {
     // Dynamic import from CDN to bypass local node package issues
     const { pipeline, env } = await import(/* @vite-ignore */ 'https://esm.sh/@xenova/transformers@2.17.2')
     
-    // Configure transformers.js to use remote HF CDN and bypass local model searches
-    env.allowLocalModels = false
+    // Configure transformers.js to load models locally from the public folder
+    env.allowLocalModels = true
+    env.localModelPath = '/'
     
-    // Allocate the VITS speech synthesis pipeline
-    synthesizer = await pipeline('text-to-speech', 'Xenova/vits-ljspeech', {
+    // Allocate the VITS speech synthesis pipeline from local path
+    synthesizer = await pipeline('text-to-speech', 'models/vits', {
       progress_callback: (data: any) => {
         if (data.status === 'progress') {
           progress.value = Math.round(data.progress)

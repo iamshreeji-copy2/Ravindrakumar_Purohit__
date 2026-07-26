@@ -124,13 +124,9 @@ onMounted(() => {
         :class="activeYear === 'all' || activeYear === y ? 'opacity-100' : 'opacity-30'"
         @mouseenter="activeYear = y"
       >
-        <!-- Year Marker Node with Anchor Link -->
-        <div class="absolute -left-[31px] top-0 flex items-center gap-2 select-none">
-          <div
-            class="w-4 h-4 rounded-full border-2 border-gray-400 dark:border-gray-500 bg-white dark:bg-gray-900 transition-all duration-300"
-            :class="activeYear === y ? 'bg-current scale-125' : ''"
-          />
-          <a :href="`#year-${y}`" class="text-base font-bold font-mono opacity-90 !no-underline !text-current">
+        <!-- Year Marker with Anchor Link (Side-aligned, no dot) -->
+        <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+          <a :href="`#year-${y}`" class="text-sm font-bold font-mono opacity-60 hover:opacity-100 !no-underline !text-current">
             {{ y }}
           </a>
         </div>

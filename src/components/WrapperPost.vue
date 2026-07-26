@@ -97,13 +97,13 @@ const ArtComponent = computed(() => {
     :lang="frontmatter.lang"
     :class="[frontmatter.wrapperClass]"
   >
-    <h1 class="mb-0 slide-enter-50">
+    <h1 class="mb-0 slide-enter-1">
       {{ frontmatter.display ?? frontmatter.title }}
       <span v-if="frontmatter.date" class="opacity-50 text-base font-normal ml-4 inline-block align-baseline">
         {{ formatDate(frontmatter.date, false) }}<span v-if="frontmatter.duration"> · {{ frontmatter.duration }}</span>
       </span>
     </h1>
-    <p v-if="frontmatter.place" class="mt--4!">
+    <p v-if="frontmatter.place" class="mt--4! slide-enter-2">
       <span op50>at </span>
       <a v-if="frontmatter.placeLink" :href="frontmatter.placeLink" target="_blank">
         {{ frontmatter.place }}
@@ -114,13 +114,13 @@ const ArtComponent = computed(() => {
     </p>
     <p
       v-if="frontmatter.subtitle"
-      class="opacity-50 !-mt-6 italic slide-enter"
+      class="opacity-50 !-mt-6 italic slide-enter-2"
     >
       {{ frontmatter.subtitle }}
     </p>
     <p
       v-if="frontmatter.draft"
-      class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2
+      class="slide-enter-2" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2
     >
       This is a draft post, the content may be incomplete. Please check back later.
     </p>
@@ -128,7 +128,8 @@ const ArtComponent = computed(() => {
   <article
     ref="content"
     :lang="frontmatter.lang"
-    :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]"
+    :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class, 'slide-enter-content']"
+    style="--enter-initial: 500ms; --enter-step: 150ms;"
   >
     <slot />
   </article>
@@ -148,3 +149,11 @@ const ArtComponent = computed(() => {
     </RouterLink>
   </div>
 </template>
+
+<style scoped>
+.slide-enter-1,
+.slide-enter-2,
+.slide-enter-content > :deep(*) {
+  animation-duration: 1.6s !important;
+}
+</style>

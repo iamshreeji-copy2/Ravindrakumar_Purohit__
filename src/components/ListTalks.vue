@@ -115,7 +115,7 @@ onMounted(() => {
     </nav>
 
     <!-- Vertical Timeline with Hash Section Anchors -->
-    <section class="relative pl-6 border-l-2 border-gray-300 dark:border-gray-700 space-y-12">
+    <section class="relative pl-6 border-l-2 border-gray-300 dark:border-gray-700 space-y-6">
       <article
         v-for="y in chronologicalYears"
         :id="`year-${y}`"

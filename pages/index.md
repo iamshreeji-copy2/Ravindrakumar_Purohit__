@@ -33,7 +33,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
 
 ### Updates
 
-<section class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-12 my-6">
+<section class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-6 my-6">
   <!-- Year 2026 -->
   <div class="relative space-y-6">
     <div class="absolute right-full mr-12 top-1 text-right select-none">

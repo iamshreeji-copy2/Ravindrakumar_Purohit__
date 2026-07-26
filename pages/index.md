@@ -1,6 +1,7 @@
 ---
 title: ravindrakumarpurohit.xyz • Ph.D. Candidate @ Speech Research Lab, DAU
 display: Ravindrakumar M. Purohit (रविन्द्रकुमार)
+description: Ph.D. Candidate in Speech & Audio Signal Processing at Dhirubhai Ambani University (DAU). Research in Deep Learning Speech Synthesis (TTS, Vocoders), Voice Conversion, Speaker Diarization, and Audio Deepfake Detection.
 art: plum
 ---
 
@@ -16,7 +17,7 @@ Read bio summaries: <BioModal />
 
 Feel free to explore my latest research 📚 [Publications](/talks), check out my 💻 [Engineering Projects](/projects), or dive into my full 🎓 [Academic Journey & Background](/experience)! 🌟
 
-<div style="text-align: center !important;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
+<blockquote style="text-align: center !important; margin: 2rem auto; max-width: 650px;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
   <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 leading-relaxed">
     सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
     ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।
@@ -28,11 +29,16 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
   <footer style="text-align: center !important;" class="text-xs font-semibold opacity-70">
     — Shrimad Bhagavad Gita, Adhyay 2, Verse 38
   </footer>
-</div>
+</blockquote>
 
 ### Updates
 
-<div class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-6 my-6">
+<section class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-6 my-6">
+  <div class="relative flex items-start gap-3 group">
+    <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
+    <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul 2026</span>
+    <div class="text-sm sm:text-base leading-relaxed opacity-90">Published a new learning roadmap: <a href="/posts/welcome-to-my-blog" class="font-medium text-[#f58025] dark:text-[#ff9933] hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a>.</div>
+  </div>
   <div class="relative flex items-start gap-3 group">
     <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jun 2026</span>
@@ -113,6 +119,6 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
     <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">May 2023</span>
     <div class="text-sm sm:text-base leading-relaxed opacity-90">Completed <span class="text-[#f58025] dark:text-[#ff9933] font-semibold">M.Tech (Data Science)</span> at Nirma University.</div>
   </div>
-</div>
+</section>
 
 ---

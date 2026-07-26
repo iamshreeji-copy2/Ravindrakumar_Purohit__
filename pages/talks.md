@@ -1,6 +1,7 @@
 ---
 title: Publications
 display: ''
+description: Peer-reviewed publications in international conferences, workshops, and journals (NeurIPS, Cluster Computing, EUSIPCO, ICPR, IJCNN) by Ravindrakumar M. Purohit.
 art: plum
 ---
 

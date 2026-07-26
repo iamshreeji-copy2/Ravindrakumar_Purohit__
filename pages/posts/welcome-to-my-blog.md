@@ -4,6 +4,7 @@ date: 2026-07-26T12:00:00.000Z
 lang: en
 duration: 4 min
 subtitle: A modern guide to signal processing fundamentals, neural audio codecs, and large speech-language models (SLMs) for mastering speech processing in 2026.
+description: A curated roadmap to textbooks, video lectures, coding toolkits, and modern deep learning models for mastering speech processing in 2026.
 ---
 
 Speech processing is a rapidly evolving interdisciplinary field combining acoustics, digital signal processing (DSP), and advanced deep learning. In 2026, the landscape is dominated by large speech-language models (SLMs), real-time speech-to-speech translation, and high-fidelity neural audio codecs.

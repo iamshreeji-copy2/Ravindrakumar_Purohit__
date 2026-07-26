@@ -7,11 +7,11 @@ function slug(name: string) {
 </script>
 
 <template>
-  <div class="max-w-300 mx-auto">
+  <section class="max-w-300 mx-auto">
     <p text-center mt--2 mb8 op60 text-lg italic>
       Research implementations, speech synthesis models, and engineering projects.
     </p>
-    <div
+    <section
       v-for="key, cidx in Object.keys(projects)" :key="key" slide-enter
       :style="{ '--enter-stage': cidx + 1 }"
     >
@@ -25,29 +25,33 @@ function slug(name: string) {
       >
         <span text-4em color-transparent absolute left--0.5rem top-0rem font-bold leading-1em text-stroke-1.5 text-stroke-hex-aaa op30 dark:op20>{{ key }}</span>
       </div>
-      <div
-        class="project-grid py-2 max-w-500 w-max mx-auto"
+      <ul
+        class="project-grid py-2 max-w-500 w-max mx-auto list-none pl-0!"
         grid="~ cols-1 md:cols-2 gap-4 lg:cols-3"
       >
-        <a
+        <li
           v-for="item, idx in projects[key]"
           :key="idx"
-          class="item relative flex items-center"
-          :href="item.link"
-          target="_blank"
-          :title="item.name"
+          class="list-none pl-0!"
         >
-          <div class="pt-2 pr-5 shrink-0">
-            <div class="text-2xl opacity-60" :class="item.icon || 'i-carbon-code'" />
-          </div>
-          <div class="flex-auto">
-            <div class="text-normal font-medium">{{ item.name }}</div>
-            <div class="desc text-sm opacity-60 font-normal" v-html="item.desc" />
-          </div>
-        </a>
-      </div>
-    </div>
-    <div>
+          <a
+            class="item relative flex items-center"
+            :href="item.link"
+            target="_blank"
+            :title="item.name"
+          >
+            <div class="pt-2 pr-5 shrink-0">
+              <div class="text-2xl opacity-60" :class="item.icon || 'i-carbon-code'" />
+            </div>
+            <div class="flex-auto">
+              <div class="text-normal font-medium">{{ item.name }}</div>
+              <div class="desc text-sm opacity-60 font-normal" v-html="item.desc" />
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <nav>
       <div class="table-of-contents">
         <div class="table-of-contents-anchor">
           <div class="i-ri-menu-2-fill" />
@@ -58,8 +62,8 @@ function slug(name: string) {
           </li>
         </ul>
       </div>
-    </div>
-  </div>
+    </nav>
+  </section>
 </template>
 
 <style scoped>

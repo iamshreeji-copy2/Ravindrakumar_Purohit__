@@ -1,0 +1,22 @@
+# Ravindrakumar M. Purohit
+
+> Ph.D. Candidate in Speech & Audio Signal Processing at Dhirubhai Ambani University (DAU, formerly DA-IICT), Gandhinagar, Gujarat, India.
+
+## Contact
+- Website: https://ravindrakumarpurohit.xyz
+- Email: itsravindra.purohit@gmail.com
+- Google Scholar: https://scholar.google.com/citations?user=vLEJ5JEAAAAJ
+- GitHub: https://github.com/iamshreeji-copy1
+- LinkedIn: https://www.linkedin.com/in/iamshreeji/?originalSubdomain=in
+
+## Research Interests
+Speech & Audio Signal Processing, Deep Learning Speech Synthesis (Text-to-Speech / Vocoders), Voice Conversion, Speaker Diarization, and Audio Deepfake Detection for low-resource and Indic languages.
+
+## Selected Publications
+- **BAANI Punjabi Vocoder** (ICPR 2026): A 296M-parameter neural vocoder for Punjabi speech synthesis.
+- **Swar Vocoder** (IJCNN 2025): Longformer and Speaker-Aware GAN Vocoders for low-resource Indic speech synthesis.
+- **Vaachika** (EUSIPCO 2025): GAN-based neural vocoder tailored for Marathi TTS.
+
+## Projects
+- **FC-HiFiGAN & PPHiFi-TTS**: Fast-converging audio synthesis models with phonetic preservation.
+- **Multi-lingual Audio Deepfake corpora (MLADDC & GGMDDC)**: Evaluation frameworks for deepfake detection.

@@ -3,7 +3,12 @@ import { toggleDark } from '~/logics'
 </script>
 
 <template>
-  <a class="select-none" title="Toggle Color Scheme" @click="toggleDark">
+  <button
+    class="select-none p-2 bg-transparent border-none! text-current cursor-pointer focus:outline-none flex items-center justify-center"
+    title="Toggle Color Scheme"
+    aria-label="Toggle Color Scheme"
+    @click="toggleDark"
+  >
     <div i-ri-sun-line dark:i-ri-moon-line />
-  </a>
+  </button>
 </template>

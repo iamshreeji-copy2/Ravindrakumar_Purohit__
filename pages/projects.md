@@ -1,7 +1,9 @@
 ---
 title: Projects
 display: Projects
-description: Key research implementations, speech models, and engineering projects
+meta:
+  - name: description
+    content: Key research implementations, speech models, and engineering projects
 wrapperClass: 'text-center'
 art: dots
 projects:
@@ -57,4 +59,9 @@ projects:
 ---
 
 <!-- @layout-full-width -->
+
+<p op75 class="mb-8 max-w-2xl mx-auto text-center leading-relaxed">
+Explore my key research implementations, neural speech models, and engineering projects. This page lists various tools and frameworks I have developed, focusing on phonetic-preserving Text-to-Speech (TTS), fast-converging GAN vocoders (like FC-HiFiGAN, Swar, and Vaachika), speaker diarization pipelines, and multilingual audio deepfake detection (ADD) datasets. Most of these projects are open-source and available on GitHub for collaboration.
+</p>
+
 <ListProjects :projects="frontmatter.projects" />

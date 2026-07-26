@@ -143,7 +143,8 @@ const ArtComponent = computed(() => {
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'"
       class="font-mono op50 hover:op75"
-      v-text="'cd ..'"
-    />
+    >
+      cd ..
+    </RouterLink>
   </div>
 </template>

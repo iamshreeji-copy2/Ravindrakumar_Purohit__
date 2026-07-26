@@ -89,9 +89,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="my-6">
+  <section class="my-6">
     <!-- Year Filter & Hash Navigation Bar -->
-    <div class="flex items-center gap-4 mb-8 border-b border-gray-200 dark:border-gray-800 pb-3">
+    <nav class="flex items-center gap-4 mb-8 border-b border-gray-200 dark:border-gray-800 pb-3">
       <span class="text-xs font-semibold opacity-50 uppercase tracking-wider select-none">Filter Year:</span>
       <button
         class="text-xs font-mono cursor-pointer bg-transparent border-none! p-0 transition-opacity"
@@ -112,11 +112,11 @@ onMounted(() => {
       >
         {{ y }}
       </a>
-    </div>
+    </nav>
 
     <!-- Vertical Timeline with Hash Section Anchors -->
-    <div class="relative pl-6 border-l-2 border-gray-300 dark:border-gray-700 space-y-12">
-      <div
+    <section class="relative pl-6 border-l-2 border-gray-300 dark:border-gray-700 space-y-12">
+      <article
         v-for="y in chronologicalYears"
         :id="`year-${y}`"
         :key="y"
@@ -136,11 +136,11 @@ onMounted(() => {
         </div>
 
         <!-- Publication List for this Year -->
-        <div class="pt-6 space-y-6">
-          <div
+        <ul class="pt-6 space-y-6 list-none pl-0!">
+          <li
             v-for="(talk, idx) in publicationsByYear[y]"
             :key="idx"
-            class="py-3 transition-all duration-300 flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-gray-100 dark:border-gray-900 last:border-b-0"
+            class="py-3 transition-all duration-300 flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-gray-100 dark:border-gray-900 last:border-b-0 list-none pl-0!"
           >
             <!-- Left Side: Series ID & Rank -->
             <div v-if="talk.series" class="w-24 shrink-0 text-sm font-semibold opacity-80 font-mono select-none text-center self-center flex flex-col gap-1">
@@ -174,9 +174,9 @@ onMounted(() => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
+          </li>
+        </ul>
+        </article>
+      </section>
+    </section>
+  </template>

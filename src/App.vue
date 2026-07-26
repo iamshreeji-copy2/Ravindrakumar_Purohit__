@@ -1,7 +1,30 @@
 <script setup lang="ts">
-import { watch } from 'vue'
+import { watch, computed } from 'vue'
+import { useHead } from '@unhead/vue'
 
 const route = useRoute()
+
+console.log('SSR APP.VUE SETUP PATH:', route.path, 'META:', JSON.stringify(route.meta || {}))
+
+const description = computed(() => {
+  return (route.meta?.frontmatter?.description as string)
+    || (route.meta?.frontmatter?.meta as any)?.find((m: any) => m.name === 'description')?.content
+    || 'Ph.D. Candidate in Speech & Audio Signal Processing at Dhirubhai Ambani University (DAU), Gandhinagar, India.'
+})
+
+const title = computed(() => {
+  return (route.meta?.frontmatter?.title as string) || 'ravindrakumarpurohit.xyz • Ph.D. Candidate @ Speech Research Lab, DAU'
+})
+
+useHead({
+  title,
+  meta: [
+    {
+      name: 'description',
+      content: description,
+    },
+  ],
+})
 
 function highlightOnPage(text: string) {
   if (typeof document === 'undefined') return

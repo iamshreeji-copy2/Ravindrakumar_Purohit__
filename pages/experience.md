@@ -1,6 +1,7 @@
 ---
 title: Experience & Background
 display: Experience & Background
+description: Detailed academic positions, honors, education (Ph.D. at Dhirubhai Ambani University, M.Tech. at Nirma University), and professional service of Ravindrakumar M. Purohit.
 art: plum
 ---
 

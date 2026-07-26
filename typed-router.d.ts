@@ -80,6 +80,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/tts': RouteRecordInfo<
+      '/tts',
+      '/tts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/use': RouteRecordInfo<
       '/use',
       '/use',
@@ -151,6 +158,14 @@ declare module 'vue-router/auto-routes' {
     'pages/talks.md': {
       routes:
         | '/talks'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/tts.md': {
+      routes:
+        | '/tts'
       views:
         | never
       pathParamNames:

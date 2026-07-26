@@ -65,8 +65,3 @@ Explore my key research implementations, neural speech models, and engineering p
 </p>
 
 <ListProjects :projects="frontmatter.projects" />
-
-<div class="prose m-auto mt-16 text-left border-t border-gray-200/30 dark:border-gray-800/30 pt-10">
-  <h2 class="text-xl font-bold mb-4 text-center">Interactive Client-Side Text-To-Speech</h2>
-  <TTSPlayground />
-</div>

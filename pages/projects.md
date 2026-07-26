@@ -1,5 +1,5 @@
 ---
-title: Projects - Ravindrakumar M. Purohit
+title: Projects • Ph.D. Candidate @ Speech Research Lab, DAU
 display: Projects
 description: Key research implementations, speech models, and engineering projects
 wrapperClass: 'text-center'

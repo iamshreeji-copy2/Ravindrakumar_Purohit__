@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Publications • Ph.D. Candidate @ Speech Research Lab, DAU
 display: ''
 art: plum
 ---

@@ -1,5 +1,5 @@
 ---
-title: Experience & Background - Ravindrakumar M. Purohit
+title: Experience & Background • Ph.D. Candidate @ Speech Research Lab, DAU
 display: Experience & Background
 art: plum
 ---

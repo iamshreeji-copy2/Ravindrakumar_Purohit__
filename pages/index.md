@@ -1,5 +1,5 @@
 ---
-title: Ravindrakumar M. Purohit (रविन्द्रकुमार)
+title: ravindrakumarpurohit.xyz • Ph.D. Candidate @ Speech Research Lab, DAU
 display: Ravindrakumar M. Purohit (रविन्द्रकुमार)
 art: plum
 ---

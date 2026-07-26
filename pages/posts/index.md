@@ -1,5 +1,5 @@
 ---
-title: Blog - Ravindrakumar M. Purohit
+title: Blog • Ph.D. Candidate @ Speech Research Lab, DAU
 display: Blog & Vlogs
 art: plum
 ---

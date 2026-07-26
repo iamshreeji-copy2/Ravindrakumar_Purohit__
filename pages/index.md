@@ -39,7 +39,6 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
     <div class="absolute -left-[54px] top-1 text-right select-none w-10">
       <span class="text-sm font-bold font-mono opacity-60">2026</span>
     </div>
-
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
@@ -51,13 +50,11 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
       <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented paper & chaired session at <span class="font-semibold">IJCNN</span>.</div>
     </div>
   </div>
-
   <!-- Year 2025 -->
   <div class="relative space-y-6">
     <div class="absolute -left-[54px] top-1 text-right select-none w-10">
       <span class="text-sm font-bold font-mono opacity-60">2025</span>
     </div>
-
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
@@ -99,13 +96,11 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
       <div class="text-sm sm:text-base leading-relaxed opacity-90">Won <span class="font-semibold">5-Minute Presentation (5MPT)</span> at S4P.</div>
     </div>
   </div>
-
   <!-- Year 2024 -->
   <div class="relative space-y-6">
     <div class="absolute -left-[54px] top-1 text-right select-none w-10">
       <span class="text-sm font-bold font-mono opacity-60">2024</span>
     </div>
-
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
@@ -127,13 +122,11 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
       <div class="text-sm sm:text-base leading-relaxed opacity-90">Volunteered at <span class="font-semibold">S4P</span> Speech Summer School.</div>
     </div>
   </div>
-
   <!-- Year 2023 -->
   <div class="relative space-y-6">
     <div class="absolute -left-[54px] top-1 text-right select-none w-10">
       <span class="text-sm font-bold font-mono opacity-60">2023</span>
     </div>
-
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>

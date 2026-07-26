@@ -1,5 +1,5 @@
 ---
-title: Projects • Ph.D. Candidate @ Speech Research Lab, DAU
+title: Projects
 display: Projects
 description: Key research implementations, speech models, and engineering projects
 wrapperClass: 'text-center'

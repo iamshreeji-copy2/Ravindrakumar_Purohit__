@@ -1,5 +1,5 @@
 ---
-title: Blog • Ph.D. Candidate @ Speech Research Lab, DAU
+title: Blog
 display: Blog & Vlogs
 art: plum
 ---

@@ -1,5 +1,5 @@
 ---
-title: Experience & Background • Ph.D. Candidate @ Speech Research Lab, DAU
+title: Experience & Background
 display: Experience & Background
 art: plum
 ---

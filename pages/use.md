@@ -1,5 +1,5 @@
 ---
-title: Use • Ph.D. Candidate @ Speech Research Lab, DAU
+title: Use
 display: Tools & Setup
 subtitle: Environment, Platforms & Libraries
 description: Technical environment, platforms, and tools used in research and development

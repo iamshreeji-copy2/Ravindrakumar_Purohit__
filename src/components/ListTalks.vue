@@ -136,7 +136,7 @@ onMounted(() => {
           <li
             v-for="(talk, idx) in publicationsByYear[y]"
             :key="idx"
-            class="py-3 transition-all duration-300 flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-gray-100 dark:border-gray-900 last:border-b-0 list-none pl-0!"
+            class="py-3 transition-all duration-300 flex flex-col sm:flex-row gap-2 sm:gap-4 list-none pl-0!"
           >
             <!-- Left Side: Series ID & Rank -->
             <div v-if="talk.series" class="w-24 shrink-0 text-sm font-semibold opacity-80 font-mono select-none text-center self-center flex flex-col gap-1">

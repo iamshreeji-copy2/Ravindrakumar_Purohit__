@@ -334,3 +334,11 @@ body {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+/* Disable prose list-item pseudo-dots on list-none lists */
+.list-none > li::before,
+.list-none li::before {
+  display: none !important;
+  content: none !important;
+}
+

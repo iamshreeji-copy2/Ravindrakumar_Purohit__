@@ -36,7 +36,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
 <section class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-12 my-6">
   <!-- Year 2026 -->
   <div class="relative space-y-6">
-    <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+    <div class="absolute right-full mr-8 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2026</span>
     </div>
     <div class="relative flex items-start gap-3 group">
@@ -52,7 +52,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
   </div>
   <!-- Year 2025 -->
   <div class="relative space-y-6">
-    <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+    <div class="absolute right-full mr-8 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2025</span>
     </div>
     <div class="relative flex items-start gap-3 group">
@@ -98,7 +98,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
   </div>
   <!-- Year 2024 -->
   <div class="relative space-y-6">
-    <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+    <div class="absolute right-full mr-8 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2024</span>
     </div>
     <div class="relative flex items-start gap-3 group">
@@ -124,7 +124,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
   </div>
   <!-- Year 2023 -->
   <div class="relative space-y-6">
-    <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+    <div class="absolute right-full mr-8 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2023</span>
     </div>
     <div class="relative flex items-start gap-3 group">

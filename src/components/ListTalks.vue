@@ -125,7 +125,7 @@ onMounted(() => {
         @mouseenter="activeYear = y"
       >
         <!-- Year Marker with Anchor Link (Side-aligned, no dot) -->
-        <div class="absolute -left-[54px] top-1 text-right select-none w-10">
+        <div class="absolute right-full mr-8 top-1 text-right select-none">
           <a :href="`#year-${y}`" class="text-sm font-bold font-mono opacity-60 hover:opacity-100 !no-underline !text-current">
             {{ y }}
           </a>

@@ -19,8 +19,8 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
 
 <blockquote style="text-align: center !important; margin: 2rem auto; max-width: 650px; border-left: none !important;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
   <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 leading-relaxed">
-    सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
-    ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।
+    सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ<br>
+    ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि
   </p>
   <p style="text-align: center !important;" class="text-sm sm:text-base italic text-gray-500 dark:text-gray-400 mb-3 leading-relaxed">
     “जय-पराजय, लाभ-हानि और सुख-दुःख को समान करके फिर युद्ध में लग जा।<br>

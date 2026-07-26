@@ -17,7 +17,7 @@ Read bio summaries: <BioModal />
 
 Feel free to explore my latest research 📚 [Publications](/talks), check out my 💻 [Engineering Projects](/projects), or dive into my full 🎓 [Academic Journey & Background](/experience)! 🌟
 
-<blockquote style="text-align: center !important; margin: 2rem auto; max-width: 650px;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
+<blockquote style="text-align: center !important; margin: 2rem auto; max-width: 650px; border-left: none !important;" class="my-8 py-6 border-y border-neutral-200 dark:border-neutral-800 text-center">
   <p style="text-align: center !important;" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 leading-relaxed">
     सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
     ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।

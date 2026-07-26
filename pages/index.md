@@ -36,111 +36,111 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
 <section class="relative pl-6 border-l-2 border-gray-200 dark:border-gray-800 space-y-12 my-6">
   <!-- Year 2026 -->
   <div class="relative space-y-6">
-    <div class="absolute right-full mr-8 top-1 text-right select-none">
+    <div class="absolute right-full mr-10 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2026</span>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Published a new learning roadmap: <a href="/posts/welcome-to-my-blog" class="font-medium hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a>.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">📚 Published a new learning roadmap: <a href="/posts/welcome-to-my-blog" class="font-medium hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a>.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jun</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented paper & chaired session at <span class="font-semibold">IJCNN</span>.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🎤 Presented paper & chaired session at <span class="font-semibold">IJCNN</span>.</div>
     </div>
   </div>
   <!-- Year 2025 -->
   <div class="relative space-y-6">
-    <div class="absolute right-full mr-8 top-1 text-right select-none">
+    <div class="absolute right-full mr-10 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2025</span>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="font-semibold">Multi-Scale Speaker Diarization</span>, <span class="font-semibold">LaghuVani</span>, & <span class="font-semibold">Whisper Evaluation</span> at PReMI.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🗣️ Presented <span class="font-semibold">Multi-Scale Speaker Diarization</span>, <span class="font-semibold">LaghuVani</span>, & <span class="font-semibold">Whisper Evaluation</span> at PReMI.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="font-semibold">NaadSindhu</span> at IndoML with travel grant.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">✈️ Presented <span class="font-semibold">NaadSindhu</span> at IndoML with travel grant.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Reviewed for <span class="font-semibold">IEEE ICASSP</span> & <span class="font-semibold">Applied Soft Computing</span> journal.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🔍 Reviewed for <span class="font-semibold">IEEE ICASSP</span> & <span class="font-semibold">Applied Soft Computing</span> journal.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Oct</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Three papers accepted at <span class="font-semibold">PReMI</span>.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🎉 Three papers accepted at <span class="font-semibold">PReMI</span>.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Presented <span class="font-semibold">Swar (Longformer GAN Vocoder)</span> at EUSIPCO.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🎹 Presented <span class="font-semibold">Swar (Longformer GAN Vocoder)</span> at EUSIPCO.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Papers <span class="font-semibold">BAANI</span> & <span class="font-semibold">DAU-KDAH Corpus</span> accepted at APSIPA ASC.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">💾 Papers <span class="font-semibold">BAANI</span> & <span class="font-semibold">DAU-KDAH Corpus</span> accepted at APSIPA ASC.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Awarded $1,000 <span class="font-semibold">Google Cloud Research Grant</span>.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">💡 Awarded $1,000 <span class="font-semibold">Google Cloud Research Grant</span>.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Won <span class="font-semibold">5-Minute Presentation (5MPT)</span> at S4P.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🥇 Won <span class="font-semibold">5-Minute Presentation (5MPT)</span> at S4P.</div>
     </div>
   </div>
   <!-- Year 2024 -->
   <div class="relative space-y-6">
-    <div class="absolute right-full mr-8 top-1 text-right select-none">
+    <div class="absolute right-full mr-10 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2024</span>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Received <span class="font-semibold">Student Research Excellence Award (2024/25)</span>.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🏆 Received <span class="font-semibold">Student Research Excellence Award (2024/25)</span>.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Papers <span class="font-semibold">GGMDDC</span>, <span class="font-semibold">PPHiFi-TTS</span>, & <span class="font-semibold">GPGAN-VC</span> accepted at APSIPA ASC.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🔊 Papers <span class="font-semibold">GGMDDC</span>, <span class="font-semibold">PPHiFi-TTS</span>, & <span class="font-semibold">GPGAN-VC</span> accepted at APSIPA ASC.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Paper <span class="font-semibold">FC-HiFiGAN</span> accepted at ICPR.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">⚡ Paper <span class="font-semibold">FC-HiFiGAN</span> accepted at ICPR.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Volunteered at <span class="font-semibold">S4P</span> Speech Summer School.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🤝 Volunteered at <span class="font-semibold">S4P</span> Speech Summer School.</div>
     </div>
   </div>
   <!-- Year 2023 -->
   <div class="relative space-y-6">
-    <div class="absolute right-full mr-8 top-1 text-right select-none">
+    <div class="absolute right-full mr-10 top-1 text-right select-none">
       <span class="text-sm font-bold font-mono opacity-60">2023</span>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Dec</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Qualified <span class="font-semibold">GSET</span> for Assistant Professor.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🎓 Qualified <span class="font-semibold">GSET</span> for Assistant Professor.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Aug</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Joined <span class="font-semibold">Speech Research Lab</span> (DAU) as Ph.D. Candidate.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">🏢 Joined <span class="font-semibold">Speech Research Lab</span> (DAU) as Ph.D. Candidate.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">May</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Completed <span class="font-semibold">M.Tech (Data Science)</span> at Nirma University.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">💻 Completed <span class="font-semibold">M.Tech (Data Science)</span> at Nirma University.</div>
     </div>
   </div>
 </section>

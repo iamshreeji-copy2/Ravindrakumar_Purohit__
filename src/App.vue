@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { watch, computed } from 'vue'
 import { useHead } from '@unhead/vue'
+import { computed, watch } from 'vue'
 
 const route = useRoute()
-
-console.log('SSR APP.VUE SETUP PATH:', route.path, 'META:', JSON.stringify(route.meta || {}))
 
 const description = computed(() => {
   return (route.meta?.frontmatter?.description as string)
@@ -27,25 +25,28 @@ useHead({
 })
 
 function highlightOnPage(text: string) {
-  if (typeof document === 'undefined') return
+  if (typeof document === 'undefined')
+    return
   const mainEl = document.querySelector('main')
-  if (!mainEl) return
+  if (!mainEl)
+    return
 
-  const escapedText = text.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  const escapedText = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
   const regex = new RegExp(`(${escapedText})`, 'gi')
 
   const walk = (node: any) => {
     if (node.nodeType === 3) { // 3 is Node.TEXT_NODE
       const parent = node.parentNode
-      if (!parent) return
-      
+      if (!parent)
+        return
+
       const parentName = parent.nodeName
       const isElement = parent.nodeType === 1 // ELEMENT_NODE
-      
+
       if (
-        ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'NOSCRIPT'].includes(parentName) ||
-        (isElement && parent.classList?.contains('highlighted-saffron')) ||
-        (isElement && typeof parent.closest === 'function' && parent.closest('.highlighted-saffron-wrapper'))
+        ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'NOSCRIPT'].includes(parentName)
+        || (isElement && parent.classList?.contains('highlighted-saffron'))
+        || (isElement && typeof parent.closest === 'function' && parent.closest('.highlighted-saffron-wrapper'))
       ) {
         return
       }
@@ -56,11 +57,12 @@ function highlightOnPage(text: string) {
         span.className = 'highlighted-saffron-wrapper'
         span.innerHTML = val.replace(
           regex,
-          '<mark class="highlighted-saffron" style="background-color: #FF9933; color: #fff; border-radius: 3px; padding: 0.1em 0.25em; font-weight: 600;">$1</mark>'
+          '<mark class="highlighted-saffron" style="background-color: #FF9933; color: #fff; border-radius: 3px; padding: 0.1em 0.25em; font-weight: 600;">$1</mark>',
         )
         parent.replaceChild(span, node)
       }
-    } else {
+    }
+    else {
       const children = Array.from(node.childNodes)
       for (const child of children) {
         walk(child)
@@ -72,9 +74,10 @@ function highlightOnPage(text: string) {
 }
 
 function removeHighlights() {
-  if (typeof document === 'undefined') return
+  if (typeof document === 'undefined')
+    return
   const wrappers = document.querySelectorAll('.highlighted-saffron-wrapper')
-  wrappers.forEach(wrapper => {
+  wrappers.forEach((wrapper) => {
     const parent = wrapper.parentNode
     if (parent) {
       const textNode = document.createTextNode(wrapper.textContent || '')
@@ -105,14 +108,15 @@ function triggerHighlightWithRetries(query: string, attempts = 3) {
   const run = () => {
     removeHighlights()
     highlightOnPage(query)
-    
+
     const firstMatch = document.querySelector('.highlighted-saffron') as HTMLElement | null
     if (firstMatch) {
       openContainingAccordions(firstMatch)
       setTimeout(() => {
         firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }, 100)
-    } else if (count < attempts) {
+    }
+    else if (count < attempts) {
       count++
       setTimeout(run, 150)
     }
@@ -123,15 +127,16 @@ function triggerHighlightWithRetries(query: string, attempts = 3) {
 // Watch route path and query changes together to clean and apply saffron highlights dynamically
 watch(
   () => [route.path, route.query.highlight],
-  ([path, queryVal]) => {
-    if (typeof window === 'undefined') return
-    
+  ([_path, queryVal]) => {
+    if (typeof window === 'undefined')
+      return
+
     removeHighlights()
     if (queryVal) {
       triggerHighlightWithRetries(String(queryVal))
     }
   },
-  { immediate: true }
+  { immediate: true },
 )
 
 const imageModel = ref<HTMLImageElement>()
@@ -213,7 +218,6 @@ onKeyStroke('Escape', (e) => {
     <RouterView />
     <Footer :key="route.path" />
   </main>
-  <TtsAccessibility />
   <Transition name="fade">
     <div v-if="imageModel" fixed top-0 left-0 right-0 bottom-0 z-500 backdrop-blur-7 @click="imageModel = undefined">
       <div absolute top-0 left-0 right-0 bottom-0 bg-black:50 z--1 />

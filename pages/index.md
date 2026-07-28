@@ -68,7 +68,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Nov</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Reviewed 🔍 for <span class="font-semibold">IEEE ICASSP</span> & <span class="font-semibold">Applied Soft Computing</span> journal.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">Reviewer for <span class="font-semibold">IEEE ICASSP</span> & <span class="font-semibold">Applied Soft Computing</span> journal.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />

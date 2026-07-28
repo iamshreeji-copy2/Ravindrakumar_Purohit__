@@ -42,7 +42,7 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
-      <div class="text-sm sm:text-base leading-relaxed opacity-90">Published a new learning roadmap: <a href="/posts/welcome-to-my-blog" class="font-medium hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a> 📚.</div>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">Published a new learning roadmap: <a href="/posts/speech-signal-processing-resources-2026" class="font-medium hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a> 📚.</div>
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />

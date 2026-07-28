@@ -6,7 +6,7 @@ import { talks } from '../../data/talks'
 import experienceRaw from '../../pages/experience.md?raw'
 // Raw imports of markdown pages for client-side search index
 import indexRaw from '../../pages/index.md?raw'
-import welcomePostRaw from '../../pages/posts/welcome-to-my-blog.md?raw'
+import speechSignalProcessingResourcesRaw from '../../pages/posts/speech-signal-processing-resources-2026.md?raw'
 import projectsRaw from '../../pages/projects.md?raw'
 import talksRaw from '../../pages/talks.md?raw'
 import useRaw from '../../pages/use.md?raw'
@@ -107,8 +107,8 @@ const searchItems = computed(() => {
   // 3. Blog Posts
   posts.value.forEach((p) => {
     let raw = ''
-    if (p.path.endsWith('welcome-to-my-blog')) {
-      raw = welcomePostRaw
+    if (p.path.endsWith('speech-signal-processing-resources-2026')) {
+      raw = speechSignalProcessingResourcesRaw
     }
     items.push({
       path: p.path,

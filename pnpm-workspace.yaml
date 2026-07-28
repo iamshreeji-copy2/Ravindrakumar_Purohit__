@@ -94,6 +94,8 @@ catalogs:
     '@types/node': ^25.9.4
     '@types/nprogress': ^0.2.3
     '@types/prompts': ^2.4.9
+  conflicts_frontend_h2_1_13:
+    '@unhead/vue': ^2.1.13
 
 onlyBuiltDependencies:
   - canvas
@@ -108,6 +110,3 @@ allowBuilds:
   exifreader: true
   sharp: true
   simple-git-hooks: true
-
-catalog:
-  sherpa-onnx-node: ^1.13.4

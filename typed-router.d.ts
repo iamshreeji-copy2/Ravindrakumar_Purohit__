@@ -59,9 +59,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/welcome-to-my-blog': RouteRecordInfo<
-      '/posts/welcome-to-my-blog',
-      '/posts/welcome-to-my-blog',
+    '/posts/speech-signal-processing-resources-2026': RouteRecordInfo<
+      '/posts/speech-signal-processing-resources-2026',
+      '/posts/speech-signal-processing-resources-2026',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -132,9 +132,9 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'pages/posts/welcome-to-my-blog.md': {
+    'pages/posts/speech-signal-processing-resources-2026.md': {
       routes:
-        | '/posts/welcome-to-my-blog'
+        | '/posts/speech-signal-processing-resources-2026'
       views:
         | never
       pathParamNames:

@@ -24,6 +24,12 @@ status = 302
 force = true
 
 [[redirects]]
+from = "/posts/welcome-to-my-blog"
+to = "/posts/speech-signal-processing-resources-2026"
+status = 301
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

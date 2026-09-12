@@ -50,10 +50,6 @@ art: plum
   Taught and mentored undergraduate students in computing and engineering, developing strong academic leadership and pedagogical skills.
 </AccordionItem>
 
-<AccordionItem title="AI-ML Intern — Vmukti Solutions Pvt Ltd, Ahmedabad" date="Sep 2022 – Mar 2023">
-  Conducted research and development on real-time Object & Human Detection using deep learning architectures including YOLOv5, SSD, and RCNN.
-</AccordionItem>
-
 <AccordionItem title="Teaching Assistant — Nirma University, Ahmedabad" date="Aug 2021 – Feb 2022">
   Conducted technical reviews and research on various AWS Cloud Services under Dr. Ajay Patel.
 </AccordionItem>

@@ -15,6 +15,15 @@ const defaultBibtex = `@misc{purohit2026prismv,
 
 const textToCopy = computed(() => (props.bibtex || defaultBibtex).trim())
 const { copy, copied } = useClipboard({ source: textToCopy })
+
+const formattedBibtex = computed(() => {
+  const raw = textToCopy.value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+  const coloredPrism = '<span class="font-bold"><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</span>'
+  return raw.replace(/PRISM-V/g, coloredPrism)
+})
 </script>
 
 <template>
@@ -33,6 +42,6 @@ const { copy, copied } = useClipboard({ source: textToCopy })
         <span>{{ copied ? 'Copied!' : 'Copy' }}</span>
       </button>
     </div>
-    <pre class="p-4 m-0 overflow-x-auto text-xs sm:text-sm leading-relaxed text-gray-800 dark:text-gray-200 bg-transparent border-none font-mono"><code>{{ textToCopy }}</code></pre>
+    <pre class="p-4 m-0 overflow-x-auto text-xs sm:text-sm leading-relaxed text-gray-800 dark:text-gray-200 bg-transparent border-none font-mono"><code v-html="formattedBibtex" /></pre>
   </div>
 </template>

@@ -37,13 +37,7 @@ Traditional neural vocoder evaluations predominantly report PESQ and MCD exclusi
 
 ---
 
-<div style="margin: 2rem 0;">
-  <img
-    src="/posts/prism-v-vocoder-benchmark-2026/prism-v-algorithm.gif"
-    alt="PRISM-V Evaluation Pipeline Animation"
-    style="width: 100%; border-radius: 12px; border: 1px solid #e2e8f0;"
-  />
-</div>
+<GifPlayer />
 
 ---
 

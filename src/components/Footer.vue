@@ -1,7 +1,9 @@
 <template>
   <div class="mt-16 mb-8 prose m-auto text-center slide-enter animate-delay-1200! copyright">
     <div class="text-center my-6">
-      <h3 class="text-center font-semibold text-lg my-3 opacity-90">📬 Let's Connect!</h3>
+      <h3 class="text-center font-semibold text-lg my-3 opacity-90">
+        📬 Let's Connect!
+      </h3>
       <div class="mt-4 flex flex-wrap justify-center items-center gap-3 print:hidden">
         <a
           href="https://scholar.google.com/citations?user=vLEJ5JEAAAAJ"
@@ -26,6 +28,12 @@
         </a>
         <EmailModal />
       </div>
+    </div>
+
+    <div class="flex justify-center my-4 print:hidden">
+      <a href="https://info.flagcounter.com/tHcN" target="_blank">
+        <img src="https://s01.flagcounter.com/count2/tHcN/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_16/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Free counters!" border="0">
+      </a>
     </div>
 
     <span class="text-sm opacity-60">

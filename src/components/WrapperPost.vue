@@ -98,9 +98,9 @@ const ArtComponent = computed(() => {
     :class="[frontmatter.wrapperClass]"
   >
     <h1 class="mb-0 slide-enter-1">
-      {{ frontmatter.display ?? frontmatter.title }}
+      <span v-html="(frontmatter.display ?? frontmatter.title).replace(/PRISM-V/g, '<span style=\'color:#6366f1\'>P</span><span style=\'color:#06b6d4\'>R</span><span style=\'color:#10b981\'>I</span><span style=\'color:#f59e0b\'>S</span><span style=\'color:#f43f5e\'>M</span>-V')" />
       <span v-if="frontmatter.date" class="opacity-50 text-base font-normal ml-4 inline-block align-baseline">
-        {{ formatDate(frontmatter.date, false) }}<span v-if="frontmatter.duration"> · {{ frontmatter.duration }}</span>
+        {{ formatDate(frontmatter.date, false) }}<span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
       </span>
     </h1>
     <p v-if="frontmatter.place" class="mt--4! slide-enter-2">
@@ -115,9 +115,8 @@ const ArtComponent = computed(() => {
     <p
       v-if="frontmatter.subtitle"
       class="opacity-50 !-mt-6 italic slide-enter-2"
-    >
-      {{ frontmatter.subtitle }}
-    </p>
+      v-html="frontmatter.subtitle.replace(/PRISM-V/g, '<span style=\'color:#6366f1\'>P</span><span style=\'color:#06b6d4\'>R</span><span style=\'color:#10b981\'>I</span><span style=\'color:#f59e0b\'>S</span><span style=\'color:#f43f5e\'>M</span>-V')"
+    />
     <p
       v-if="frontmatter.draft"
       class="slide-enter-2" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2
@@ -128,7 +127,7 @@ const ArtComponent = computed(() => {
   <article
     ref="content"
     :lang="frontmatter.lang"
-    :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class, 'slide-enter-content']"
+    class="slide-enter-content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]"
     style="--enter-initial: 500ms; --enter-step: 150ms;"
   >
     <slot />

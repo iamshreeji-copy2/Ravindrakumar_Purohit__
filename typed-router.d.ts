@@ -59,6 +59,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/prism-v-vocoder-benchmark-2026': RouteRecordInfo<
+      '/posts/prism-v-vocoder-benchmark-2026',
+      '/posts/prism-v-vocoder-benchmark-2026',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/speech-signal-processing-resources-2026': RouteRecordInfo<
       '/posts/speech-signal-processing-resources-2026',
       '/posts/speech-signal-processing-resources-2026',
@@ -127,6 +134,14 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/index.md': {
       routes:
         | '/posts/'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/prism-v-vocoder-benchmark-2026.md': {
+      routes:
+        | '/posts/prism-v-vocoder-benchmark-2026'
       views:
         | never
       pathParamNames:

@@ -41,6 +41,11 @@ Feel free to explore my latest research 📚 [Publications](/talks), check out m
     </div>
     <div class="relative flex items-start gap-3 group">
       <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
+      <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Sep</span>
+      <div class="text-sm sm:text-base leading-relaxed opacity-90">Released <a href="/posts/prism-v-vocoder-benchmark-2026" class="font-bold hover:underline"><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</a> — an open leaderboard for multidimensional evaluation of pretrained neural vocoders 🎙️.</div>
+    </div>
+    <div class="relative flex items-start gap-3 group">
+      <div class="absolute -left-[29px] top-[9px] w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
       <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5">Jul</span>
       <div class="text-sm sm:text-base leading-relaxed opacity-90">Published a new learning roadmap: <a href="/posts/speech-signal-processing-resources-2026" class="font-medium hover:underline">Best Resources to Learn Speech Signal Processing in 2026</a> 📚.</div>
     </div>

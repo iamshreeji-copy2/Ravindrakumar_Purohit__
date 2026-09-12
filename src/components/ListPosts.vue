@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Post } from '~/types'
+import dayjs from 'dayjs'
 import { useRouter } from 'vue-router/auto'
 import { englishOnly } from '~/logics'
-import dayjs from 'dayjs'
 
 const props = defineProps<{
   type?: string
@@ -67,13 +67,13 @@ const years = computed(() => Object.keys(postsByYear.value).sort((a, b) => Numbe
 
         <!-- Post Items for this Year -->
         <div
-          v-for="route, idx in postsByYear[y]"
+          v-for="route in postsByYear[y]"
           :key="route.path"
           class="relative flex items-start gap-3 group"
         >
           <!-- Timeline dot centered on vertical bar -->
           <div class="absolute -left-[29px] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover:scale-125 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-300" />
-          
+
           <!-- Month indicator badge -->
           <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-gray-500/10 shrink-0 mt-0.5 select-none">
             {{ formatMonth(route.date) }}
@@ -94,7 +94,7 @@ const years = computed(() => Object.keys(postsByYear.value).sort((a, b) => Numbe
               "
               class="font-medium hover:underline !no-underline !text-current"
             >
-              {{ route.title }}
+              <span v-html="route.title.replace('PRISM-V', '<strong><span style=\'color:#6366f1\'>P</span><span style=\'color:#06b6d4\'>R</span><span style=\'color:#10b981\'>I</span><span style=\'color:#f59e0b\'>S</span><span style=\'color:#f43f5e\'>M</span>-V</strong>')" />
             </component>
 
             <!-- Language Badge -->

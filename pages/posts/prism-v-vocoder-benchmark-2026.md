@@ -87,12 +87,4 @@ The leaderboard will be updated continuously as new pretrained models are submit
 
 If <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong> is useful for your research, please cite:
 
-```bibtex
-@misc{purohit2026prismv,
-  author       = {Ravindrakumar M. Purohit and Hemant A. Patil},
-  title        = {PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis},
-  year         = {2026},
-  howpublished = {\url{https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/}},
-  note         = {Open neural vocoder evaluation leaderboard}
-}
-```
+<BibtexBox />

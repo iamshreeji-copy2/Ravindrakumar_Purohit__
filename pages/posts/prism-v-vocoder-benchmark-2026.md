@@ -45,7 +45,7 @@ Traditional neural vocoder evaluations predominantly report PESQ and MCD exclusi
 
 Explore the full interactive leaderboard with Plotly visualizations, per-corpus breakdowns, radar charts, and audio sample comparisons:
 
-**🔗 [PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis](https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/)**
+**🔗 [<span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis](https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/)**
 
 The leaderboard will be updated continuously as new pretrained models are submitted. If you have a vocoder model and want it evaluated, open a pull request or raise an issue in the GitHub repository.
 

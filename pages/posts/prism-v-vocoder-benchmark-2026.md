@@ -41,34 +41,8 @@ Traditional neural vocoder evaluations predominantly report PESQ and MCD exclusi
   <img
     src="/posts/prism-v-vocoder-benchmark-2026/prism-v-algorithm.gif"
     alt="PRISM-V Evaluation Pipeline Animation"
-    style="width: 100%; border-radius: 12px; margin-bottom: 2rem; border: 1px solid #e2e8f0;"
+    style="width: 100%; border-radius: 12px; border: 1px solid #e2e8f0;"
   />
-
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 0; width: 100%; font-family: ui-monospace, monospace;">
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 600; color: #1e293b; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      Ground-Truth Audio
-    </div>
-    <div style="font-size: 1.5rem; color: #64748b; line-height: 1; margin: 6px 0;">↓</div>
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 600; color: #1e293b; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      Mel-Spectrogram Extraction (standard filterbank)
-    </div>
-    <div style="font-size: 1.5rem; color: #64748b; line-height: 1; margin: 6px 0;">↓</div>
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 600; color: #1e293b; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      Neural Vocoder (zero-shot synthesis)
-    </div>
-    <div style="font-size: 1.5rem; color: #64748b; line-height: 1; margin: 6px 0;">↓</div>
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 600; color: #1e293b; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong> Scoring (P · R · I · S · M)
-    </div>
-    <div style="font-size: 1.5rem; color: #64748b; line-height: 1; margin: 6px 0;">↓</div>
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 600; color: #1e293b; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      Composite <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong> Score
-    </div>
-    <div style="font-size: 1.5rem; color: #64748b; line-height: 1; margin: 6px 0;">↓</div>
-    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 0.75rem 1.4rem; font-size: 0.95rem; font-weight: 700; color: #0f172a; text-align: center; width: 100%; white-space: nowrap; overflow-x: auto;">
-      Leaderboard Ranking
-    </div>
-  </div>
 </div>
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "PRISM-V: An Open Leaderboard for Multidimensional Evaluation of Pretrained Neural Vocoders"
+title: "PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis"
 date: "2026-09-05"
 lang: en
 duration: 6 min
@@ -78,8 +78,7 @@ If <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</sp
 ```bibtex
 @misc{purohit2026prismv,
   author       = {Ravindrakumar M. Purohit and Hemant A. Patil},
-  title        = {{PRISM-V}: Multidimensional Evaluation of Pretrained
-                  Neural Vocoders for Speech Synthesis},
+  title        = {PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis},
   year         = {2026},
   howpublished = {\url{https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/}},
   note         = {Open neural vocoder evaluation leaderboard}

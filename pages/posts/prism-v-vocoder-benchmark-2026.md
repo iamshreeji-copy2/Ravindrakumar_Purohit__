@@ -3,8 +3,8 @@ title: "PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for
 date: "2026-09-05"
 lang: en
 duration: 6 min
-subtitle: Releasing PRISM-V — an open leaderboard for multidimensional evaluation of 15 pretrained neural vocoder architectures across 4 diverse English speech corpora.
-description: PRISM-V is an open leaderboard for multidimensional evaluation of pretrained neural vocoders on English speech across diverse acoustic conditions, generative architectures, and edge deployment profiles.
+subtitle: "Releasing PRISM-V — A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis across 4 diverse English speech corpora."
+description: "PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis on English speech across diverse acoustic conditions, generative architectures, and edge deployment profiles."
 ---
 
 <p class="opacity-60 -mt-2 mb-6 text-sm">
@@ -13,11 +13,11 @@ Written by <a href="/">Ravindrakumar M. Purohit</a> · September 2026
 
 <img
   src="/posts/prism-v-vocoder-benchmark-2026/prism-v-logo.png"
-  alt="PRISM-V Open Leaderboard for Neural Vocoder Evaluation"
+  alt="PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis"
   style="width: 100%; border-radius: 12px; margin: 0 0 2rem 0;"
 />
 
-We are releasing <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong> — an open leaderboard for multidimensional evaluation of pretrained neural vocoders on English speech.
+We are releasing <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong>: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis.
 
 ---
 
@@ -77,7 +77,7 @@ Traditional neural vocoder evaluations predominantly report PESQ and MCD exclusi
 
 Explore the full interactive leaderboard with Plotly visualizations, per-corpus breakdowns, radar charts, and audio sample comparisons:
 
-**🔗 [Open Vocoder Leaderboard — PRISM-V](https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/)**
+**🔗 [PRISM-V: A Multidimensional Evaluation of Pretrained Neural Vocoders for Speech Synthesis](https://iamshreeji-copy2.github.io/open_vocoder_leaderboard/)**
 
 The leaderboard will be updated continuously as new pretrained models are submitted. If you have a vocoder model and want it evaluated, open a pull request or raise an issue in the GitHub repository.
 

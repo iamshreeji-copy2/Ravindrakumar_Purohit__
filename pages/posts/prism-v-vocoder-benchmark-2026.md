@@ -27,13 +27,13 @@ Traditional neural vocoder evaluations predominantly report PESQ and MCD exclusi
 
 <strong><span style="color:#6366f1">P</span><span style="color:#06b6d4">R</span><span style="color:#10b981">I</span><span style="color:#f59e0b">S</span><span style="color:#f43f5e">M</span>-V</strong> fills this gap with a comprehensive, reproducible evaluation framework covering:
 
-| Dimension                                                                       |
-| ------------------------------------------------------------------------------- |
-| <strong><span style="color:#6366f1">P</span></strong> — Perceptual Quality      |
-| <strong><span style="color:#06b6d4">R</span></strong> — Reconstruction Fidelity |
-| <strong><span style="color:#10b981">I</span></strong> — Intelligibility         |
-| <strong><span style="color:#f59e0b">S</span></strong> — Spectral Accuracy       |
-| <strong><span style="color:#f43f5e">M</span></strong> — Machine Throughput      |
+| Dimension                                                                |
+| ------------------------------------------------------------------------ |
+| <strong><span style="color:#6366f1">P</span></strong> — Perceptual       |
+| <strong><span style="color:#06b6d4">R</span></strong> — Reconstruction   |
+| <strong><span style="color:#10b981">I</span></strong> — Intelligibility  |
+| <strong><span style="color:#f59e0b">S</span></strong> — Speaker          |
+| <strong><span style="color:#f43f5e">M</span></strong> — Model Efficiency |
 
 ---
 

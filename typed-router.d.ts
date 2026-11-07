@@ -59,6 +59,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/diwali-greetings-2026': RouteRecordInfo<
+      '/posts/diwali-greetings-2026',
+      '/posts/diwali-greetings-2026',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/prism-v-vocoder-benchmark-2026': RouteRecordInfo<
       '/posts/prism-v-vocoder-benchmark-2026',
       '/posts/prism-v-vocoder-benchmark-2026',
@@ -134,6 +141,14 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/index.md': {
       routes:
         | '/posts/'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/diwali-greetings-2026.md': {
+      routes:
+        | '/posts/diwali-greetings-2026'
       views:
         | never
       pathParamNames:
